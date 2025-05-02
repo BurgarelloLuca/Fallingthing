@@ -12,11 +12,13 @@ namespace FallingThing_s
 {
     public partial class Form1: Form
     {
+        Random random = new Random();
         bool movimentoSinistra = false;
         bool movimentoDestra = false;
         int velocitaPersonaggio= 5;
-        PictureBox[] Immagini = new PictureBox[10];
-        Random random = new Random();
+        PictureBox[] immagini = new PictureBox[3];
+      
+
 
         public Form1()
         {
@@ -53,9 +55,9 @@ namespace FallingThing_s
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timerPersonaggio_Tick(object sender, EventArgs e)
         {
-            int nuovaSinistra = pictureBox1.Left;
+            int nuovaSinistra = personaggio.Left;
             if (movimentoSinistra)
             {
                 nuovaSinistra -= velocitaPersonaggio;
@@ -64,21 +66,38 @@ namespace FallingThing_s
             {
                 nuovaSinistra += velocitaPersonaggio;
             }
-            if (nuovaSinistra>= 0 && nuovaSinistra + pictureBox1.Width <= this.ClientSize.Width)
+            if (nuovaSinistra>= 0 && nuovaSinistra + personaggio.Width <= this.ClientSize.Width-lblTesto.Width)
             {
-                pictureBox1.Left = nuovaSinistra;
+                personaggio.Left = nuovaSinistra;
             }
           
         }
-
-        private void timerCadutaOggetti_Tick(object sender, EventArgs e)
+        private void cadutaOggetto(int velocitaCaduta, int punteggio)
         {
-            int velocitaCaduta = 5;
-            pictureBox2.Top += velocitaCaduta;
-            if (pictureBox2.Top >= this.ClientSize.Height - pictureBox1.Height)
+            oggetto.Top += velocitaCaduta;
+
+            if (oggetto.Bounds.IntersectsWith(personaggio.Bounds))
             {
-                pictureBox2.Top = 0;
+                oggetto.Top = 0;
+                oggetto.Left = random.Next(0, this.ClientSize.Width - oggetto.Width - lblTesto.Width);
+                string[] parole = lblPunteggio.Text.Split(' ');
+                if (int.TryParse(parole[0], out punteggio))
+                {
+                    punteggio += 125;
+                    lblPunteggio.Text = punteggio.ToString() + " Kcal";
+                }
+                    
+            }
+            if (oggetto.Top > this.ClientSize.Height)
+            {
+                oggetto.Top = 0;
+                oggetto.Left = random.Next(0, this.ClientSize.Width - oggetto.Width - lblTesto.Width);
             }
         }
+        private void timerCadutaOggetti_Tick(object sender, EventArgs e)
+        {
+            cadutaOggetto(5,100);
+        }
+
     }
 }

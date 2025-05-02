@@ -81,7 +81,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fungoFallingThing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\depositphotos_253431934-stock-illustration-angry-cartoon-monster-pixel-art-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fungoFallingThing-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canvas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tronc.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
