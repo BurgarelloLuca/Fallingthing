@@ -15,7 +15,7 @@ namespace FallingThing_s
         Random random = new Random();
         bool movimentoSinistra = false;
         bool movimentoDestra = false;
-        int velocitaPersonaggio= 5;
+        int velocitaPersonaggio = 5;
         PictureBox[] immagini = new PictureBox[3];
       
 
@@ -79,12 +79,12 @@ namespace FallingThing_s
             if (oggetto.Bounds.IntersectsWith(personaggio.Bounds))
             {
                 oggetto.Top = 0;
-                oggetto.Left = random.Next(0, this.ClientSize.Width - oggetto.Width - lblTesto.Width);
+                oggetto.Left = random.Next(0 , this.ClientSize.Width - oggetto.Width - lblTesto.Width);
                 string[] parole = lblPunteggio.Text.Split(' ');
                 if (int.TryParse(parole[0], out punteggio))
                 {
                     punteggio += 125;
-                    lblPunteggio.Text = punteggio.ToString() + " Kcal";
+                    lblPunteggio.Text = punteggio.ToString() + " Kcal ";
                 }
                     
             }
