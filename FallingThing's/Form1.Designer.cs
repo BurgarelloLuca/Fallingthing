@@ -33,10 +33,22 @@
             this.timerPersonaggio = new System.Windows.Forms.Timer(this.components);
             this.timerCadutaOggetti = new System.Windows.Forms.Timer(this.components);
             this.lblPunteggio = new System.Windows.Forms.Label();
+            this.Oggetto1 = new System.Windows.Forms.PictureBox();
+            this.Oggetto3 = new System.Windows.Forms.PictureBox();
+            this.cuore3 = new System.Windows.Forms.PictureBox();
+            this.cuore2 = new System.Windows.Forms.PictureBox();
+            this.cuore1 = new System.Windows.Forms.PictureBox();
+            this.tronco = new System.Windows.Forms.PictureBox();
             this.lblTesto = new System.Windows.Forms.Label();
-            this.oggetto = new System.Windows.Forms.PictureBox();
+            this.Oggetto2 = new System.Windows.Forms.PictureBox();
             this.personaggio = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.oggetto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Oggetto1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Oggetto3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cuore3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cuore2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cuore1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tronco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Oggetto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaggio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,13 +68,79 @@
             this.lblPunteggio.AutoSize = true;
             this.lblPunteggio.BackColor = System.Drawing.Color.Transparent;
             this.lblPunteggio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPunteggio.ForeColor = System.Drawing.Color.White;
-            this.lblPunteggio.Location = new System.Drawing.Point(1027, 768);
+            this.lblPunteggio.ForeColor = System.Drawing.Color.Black;
+            this.lblPunteggio.Location = new System.Drawing.Point(986, 749);
             this.lblPunteggio.Name = "lblPunteggio";
             this.lblPunteggio.Size = new System.Drawing.Size(79, 29);
             this.lblPunteggio.TabIndex = 3;
             this.lblPunteggio.Text = "0 Kcal";
             this.lblPunteggio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Oggetto1
+            // 
+            this.Oggetto1.Image = global::FallingThing_s.Properties.Resources.Flopper;
+            this.Oggetto1.Location = new System.Drawing.Point(261, 12);
+            this.Oggetto1.Name = "Oggetto1";
+            this.Oggetto1.Size = new System.Drawing.Size(74, 73);
+            this.Oggetto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Oggetto1.TabIndex = 9;
+            this.Oggetto1.TabStop = false;
+            // 
+            // Oggetto3
+            // 
+            this.Oggetto3.BackColor = System.Drawing.Color.Transparent;
+            this.Oggetto3.Image = global::FallingThing_s.Properties.Resources.Rottame;
+            this.Oggetto3.Location = new System.Drawing.Point(652, 12);
+            this.Oggetto3.Name = "Oggetto3";
+            this.Oggetto3.Size = new System.Drawing.Size(78, 73);
+            this.Oggetto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Oggetto3.TabIndex = 8;
+            this.Oggetto3.TabStop = false;
+            // 
+            // cuore3
+            // 
+            this.cuore3.BackColor = System.Drawing.Color.Transparent;
+            this.cuore3.Image = global::FallingThing_s.Properties.Resources.Cuore;
+            this.cuore3.Location = new System.Drawing.Point(122, 12);
+            this.cuore3.Name = "cuore3";
+            this.cuore3.Size = new System.Drawing.Size(54, 50);
+            this.cuore3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cuore3.TabIndex = 7;
+            this.cuore3.TabStop = false;
+            // 
+            // cuore2
+            // 
+            this.cuore2.BackColor = System.Drawing.Color.Transparent;
+            this.cuore2.Image = global::FallingThing_s.Properties.Resources.Cuore;
+            this.cuore2.Location = new System.Drawing.Point(64, 12);
+            this.cuore2.Name = "cuore2";
+            this.cuore2.Size = new System.Drawing.Size(61, 49);
+            this.cuore2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cuore2.TabIndex = 6;
+            this.cuore2.TabStop = false;
+            // 
+            // cuore1
+            // 
+            this.cuore1.BackColor = System.Drawing.Color.Transparent;
+            this.cuore1.Image = global::FallingThing_s.Properties.Resources.Cuore;
+            this.cuore1.Location = new System.Drawing.Point(12, 12);
+            this.cuore1.Name = "cuore1";
+            this.cuore1.Size = new System.Drawing.Size(59, 49);
+            this.cuore1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cuore1.TabIndex = 5;
+            this.cuore1.TabStop = false;
+            // 
+            // tronco
+            // 
+            this.tronco.BackColor = System.Drawing.Color.Transparent;
+            this.tronco.Image = global::FallingThing_s.Properties.Resources.Tronco;
+            this.tronco.InitialImage = null;
+            this.tronco.Location = new System.Drawing.Point(903, 493);
+            this.tronco.Name = "tronco";
+            this.tronco.Size = new System.Drawing.Size(272, 166);
+            this.tronco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.tronco.TabIndex = 4;
+            this.tronco.TabStop = false;
             // 
             // lblTesto
             // 
@@ -71,32 +149,31 @@
             this.lblTesto.ForeColor = System.Drawing.Color.White;
             this.lblTesto.Image = ((System.Drawing.Image)(resources.GetObject("lblTesto.Image")));
             this.lblTesto.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lblTesto.Location = new System.Drawing.Point(997, 701);
+            this.lblTesto.Location = new System.Drawing.Point(955, 675);
             this.lblTesto.Name = "lblTesto";
             this.lblTesto.Size = new System.Drawing.Size(141, 121);
-            this.lblTesto.TabIndex = 2;
+            this.lblTesto.TabIndex = 1;
             this.lblTesto.Text = "Ti stai saziando?";
             this.lblTesto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // oggetto
+            // Oggetto2
             // 
-            this.oggetto.BackColor = System.Drawing.Color.Transparent;
-            this.oggetto.Image = ((System.Drawing.Image)(resources.GetObject("oggetto.Image")));
-            this.oggetto.Location = new System.Drawing.Point(504, 12);
-            this.oggetto.Name = "oggetto";
-            this.oggetto.Size = new System.Drawing.Size(115, 59);
-            this.oggetto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.oggetto.TabIndex = 1;
-            this.oggetto.TabStop = false;
+            this.Oggetto2.BackColor = System.Drawing.Color.Transparent;
+            this.Oggetto2.Image = ((System.Drawing.Image)(resources.GetObject("Oggetto2.Image")));
+            this.Oggetto2.Location = new System.Drawing.Point(461, 12);
+            this.Oggetto2.Name = "Oggetto2";
+            this.Oggetto2.Size = new System.Drawing.Size(78, 73);
+            this.Oggetto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Oggetto2.TabIndex = 1;
+            this.Oggetto2.TabStop = false;
             // 
             // personaggio
             // 
-            this.personaggio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.personaggio.BackColor = System.Drawing.Color.Transparent;
             this.personaggio.Image = ((System.Drawing.Image)(resources.GetObject("personaggio.Image")));
-            this.personaggio.Location = new System.Drawing.Point(491, 503);
+            this.personaggio.Location = new System.Drawing.Point(412, 505);
             this.personaggio.Name = "personaggio";
-            this.personaggio.Size = new System.Drawing.Size(192, 137);
+            this.personaggio.Size = new System.Drawing.Size(127, 163);
             this.personaggio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.personaggio.TabIndex = 0;
             this.personaggio.TabStop = false;
@@ -105,20 +182,31 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1139, 822);
+            this.Controls.Add(this.Oggetto1);
+            this.Controls.Add(this.Oggetto3);
+            this.Controls.Add(this.cuore3);
+            this.Controls.Add(this.cuore2);
+            this.Controls.Add(this.cuore1);
+            this.Controls.Add(this.tronco);
             this.Controls.Add(this.lblPunteggio);
             this.Controls.Add(this.lblTesto);
-            this.Controls.Add(this.oggetto);
+            this.Controls.Add(this.Oggetto2);
             this.Controls.Add(this.personaggio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "aaa";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
-            ((System.ComponentModel.ISupportInitialize)(this.oggetto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Oggetto1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Oggetto3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cuore3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cuore2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cuore1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tronco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Oggetto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaggio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -129,10 +217,16 @@
 
         private System.Windows.Forms.Timer timerPersonaggio;
         private System.Windows.Forms.PictureBox personaggio;
-        private System.Windows.Forms.PictureBox oggetto;
+        private System.Windows.Forms.PictureBox Oggetto2;
         private System.Windows.Forms.Timer timerCadutaOggetti;
         private System.Windows.Forms.Label lblTesto;
         private System.Windows.Forms.Label lblPunteggio;
+        private System.Windows.Forms.PictureBox tronco;
+        private System.Windows.Forms.PictureBox cuore1;
+        private System.Windows.Forms.PictureBox cuore2;
+        private System.Windows.Forms.PictureBox cuore3;
+        private System.Windows.Forms.PictureBox Oggetto3;
+        private System.Windows.Forms.PictureBox Oggetto1;
     }
 }
 

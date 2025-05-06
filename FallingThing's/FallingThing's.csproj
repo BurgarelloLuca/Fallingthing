@@ -95,5 +95,38 @@
   <ItemGroup>
     <None Include="Resources\tronc.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MELA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rottame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ruota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cioccolato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeccaLecca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peperoncino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watermelon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BURGERRRR.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
