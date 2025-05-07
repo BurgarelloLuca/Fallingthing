@@ -106,7 +106,7 @@ namespace FallingThing_s
             int nuovoIndice;
             for (int i = 0; i < oggettiCadenti.Length; i++)
             {
-                int indice = (int)oggettiCadenti[i].Tag;
+                int indice = (int)oggettiCadenti[i].Tag;    //indice immagine
                 int velocita;
 
                 if (indice <= 3)
@@ -119,7 +119,7 @@ namespace FallingThing_s
                 }
 
                 oggettiCadenti[i].Top += velocita;
-                if (oggettiCadenti[i].Top > this.ClientSize.Height)
+                if (oggettiCadenti[i].Bounds.IntersectsWith(lblTerreno.Bounds))
                 {
                     nuovoIndice = random.Next(0, immagini.Length);
                     oggettiCadenti[i].Image = immagini[nuovoIndice];
@@ -172,7 +172,7 @@ namespace FallingThing_s
                     oggettiCadenti[i].Top = 0;
                 }
             }
-            lblPunteggio.Text = punteggio + "Punti";
+            lblPunteggio.Text = punteggio + "Kcal";
             
         }
     }
