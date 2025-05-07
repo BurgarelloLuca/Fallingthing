@@ -156,14 +156,15 @@ namespace FallingThing_s
                             case 1:
                                 cuore1.Visible = false;
                                 cuori--;
-                                break;
-                            case 0:
-                                giocoFinito = true;
+                                 giocoFinito = true;
                                 timerPersonaggio.Stop();
                                 timerCadutaOggetti.Stop();
                                 MessageBox.Show("Hai perso!");
                                 this.Close();
                                 return;
+                                
+                            
+                               
                         }
                     }
                     nuovoIndice = random.Next(0, immagini.Length);
