@@ -141,12 +141,30 @@ namespace FallingThing_s.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream oof {
+            get {
+                return ResourceManager.GetStream("oof", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Peperoncino {
             get {
                 object obj = ResourceManager.GetObject("Peperoncino", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Relaxing {
+            get {
+                return ResourceManager.GetStream("Relaxing", resourceCulture);
             }
         }
         
@@ -176,6 +194,16 @@ namespace FallingThing_s.Properties {
         internal static System.Drawing.Bitmap Tronco {
             get {
                 object obj = ResourceManager.GetObject("Tronco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tronco_centro {
+            get {
+                object obj = ResourceManager.GetObject("tronco centro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -4,12 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FallingThing_s
 {
+  
     public partial class Form1: Form
     {
         Random random = new Random();
@@ -18,6 +20,9 @@ namespace FallingThing_s
         int velocitaPersonaggio= 5;
         bool giocoFinito = false; 
         int cuori = 3;
+        SoundPlayer Musichetta = new SoundPlayer(Properties.Resources.Relaxing);
+        
+
         Image[] immagini = new Image[10]
         {
             Properties.Resources.Fungo,
@@ -38,8 +43,9 @@ namespace FallingThing_s
       
 
         public Form1()
-        {
+        { 
             InitializeComponent();
+            Musichetta.PlayLooping();
             oggettiCadenti = new PictureBox[]
                 {
                 Oggetto1,
@@ -175,6 +181,16 @@ namespace FallingThing_s
             }
             lblPunteggio.Text = punteggio + "Kcal";
             
+        }
+
+        private void lblPunteggio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTesto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

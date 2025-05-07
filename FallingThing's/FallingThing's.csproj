@@ -128,5 +128,14 @@
   <ItemGroup>
     <None Include="Resources\BURGERRRR.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videogame_music_falling_things %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tronco centro.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oof %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
