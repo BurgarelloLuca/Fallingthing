@@ -69,13 +69,13 @@
             this.lblPunteggio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPunteggio.AutoSize = true;
             this.lblPunteggio.BackColor = System.Drawing.Color.Transparent;
-            this.lblPunteggio.Font = new System.Drawing.Font("Snap ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPunteggio.Font = new System.Drawing.Font("SimSun-ExtB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPunteggio.ForeColor = System.Drawing.Color.White;
             this.lblPunteggio.Image = ((System.Drawing.Image)(resources.GetObject("lblPunteggio.Image")));
-            this.lblPunteggio.Location = new System.Drawing.Point(1355, 435);
+            this.lblPunteggio.Location = new System.Drawing.Point(1430, 531);
             this.lblPunteggio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPunteggio.Name = "lblPunteggio";
-            this.lblPunteggio.Size = new System.Drawing.Size(89, 25);
+            this.lblPunteggio.Size = new System.Drawing.Size(75, 19);
             this.lblPunteggio.TabIndex = 3;
             this.lblPunteggio.Text = "0 Kcal";
             this.lblPunteggio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -147,7 +147,7 @@
             this.tronco.BackColor = System.Drawing.Color.Transparent;
             this.tronco.Image = global::FallingThing_s.Properties.Resources.Tronco;
             this.tronco.InitialImage = null;
-            this.tronco.Location = new System.Drawing.Point(1265, 354);
+            this.tronco.Location = new System.Drawing.Point(1340, 450);
             this.tronco.Margin = new System.Windows.Forms.Padding(2);
             this.tronco.Name = "tronco";
             this.tronco.Size = new System.Drawing.Size(225, 135);
@@ -159,10 +159,11 @@
             // 
             this.lblTesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTesto.BackColor = System.Drawing.Color.Transparent;
-            this.lblTesto.Font = new System.Drawing.Font("Goudy Stout", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTesto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTesto.Font = new System.Drawing.Font("SimSun-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTesto.ForeColor = System.Drawing.Color.White;
             this.lblTesto.Image = ((System.Drawing.Image)(resources.GetObject("lblTesto.Image")));
-            this.lblTesto.Location = new System.Drawing.Point(1339, 396);
+            this.lblTesto.Location = new System.Drawing.Point(1414, 492);
             this.lblTesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTesto.Name = "lblTesto";
             this.lblTesto.Size = new System.Drawing.Size(119, 51);
@@ -188,22 +189,23 @@
             this.personaggio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.personaggio.BackColor = System.Drawing.Color.Transparent;
             this.personaggio.Image = ((System.Drawing.Image)(resources.GetObject("personaggio.Image")));
-            this.personaggio.Location = new System.Drawing.Point(628, 341);
+            this.personaggio.Location = new System.Drawing.Point(703, 437);
             this.personaggio.Margin = new System.Windows.Forms.Padding(2);
             this.personaggio.Name = "personaggio";
             this.personaggio.Size = new System.Drawing.Size(95, 132);
             this.personaggio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.personaggio.TabIndex = 0;
             this.personaggio.TabStop = false;
+            this.personaggio.Click += new System.EventHandler(this.personaggio_Click);
             // 
             // lblTerreno
             // 
             this.lblTerreno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTerreno.BackColor = System.Drawing.Color.Transparent;
-            this.lblTerreno.Location = new System.Drawing.Point(9, 469);
+            this.lblTerreno.Location = new System.Drawing.Point(9, 565);
             this.lblTerreno.Name = "lblTerreno";
-            this.lblTerreno.Size = new System.Drawing.Size(1561, 29);
+            this.lblTerreno.Size = new System.Drawing.Size(1636, 29);
             this.lblTerreno.TabIndex = 10;
             this.lblTerreno.Visible = false;
             // 
@@ -213,7 +215,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1469, 609);
+            this.ClientSize = new System.Drawing.Size(1544, 705);
             this.Controls.Add(this.lblPunteggio);
             this.Controls.Add(this.lblTerreno);
             this.Controls.Add(this.lblTesto);
@@ -230,6 +232,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "aaa";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto1)).EndInit();

@@ -14,10 +14,11 @@ namespace FallingThing_s
   
     public partial class Form1: Form
     {
+
         Random random = new Random();
         bool movimentoSinistra = false;
         bool movimentoDestra = false;
-        int velocitaPersonaggio= 5;
+        int velocitaPersonaggio= 6;
         bool giocoFinito = false; 
         int cuori = 3;
         SoundPlayer Musichetta = new SoundPlayer(Properties.Resources.Relaxing);
@@ -191,6 +192,21 @@ namespace FallingThing_s
         private void lblTesto_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void personaggio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.DoubleBuffered = true;
         }
     }
 }

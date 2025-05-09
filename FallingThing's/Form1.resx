@@ -127,7 +127,7 @@
   <data name="lblPunteggio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHwAAABaCAYAAAB66zKVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAO+pJREFUeF7tfWd329iWJX9LzytLYs45gwBBSk7VPdOhqhwkWU5yznLOQbYkp6r3
+        wQAADsEBuJFr7QAAO+pJREFUeF7tfWd329iWJX9LzytLYs45gwBBSk7VPdOhqhwkWU5yznLOQbYkp6r3
         ptf81jNr73MvAEKUK/RbPb2m68NelwQBELjnhpNP4lyqKWeTDVlP1mUjWZWzqZqcT1XlYroml1IV2UyW
         iSvZqlzJ1+VyviIXM0XZXMrL5hLaolxcKu3D+QWgELQXDhXkwkKe7fnFvJxbKszgwmLxm7i4MIvzh3Jy
         biEnZxcLsrFYkrWliqwma3IyVZefUjU5lWkHOJ1WrKabBg1ZzbaI09mOnMp05VSmLyfTvQCrmZ6s4rpU
@@ -389,7 +389,7 @@
   <data name="lblTesto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHwAAABaCAYAAAB66zKVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAO+pJREFUeF7tfWd329iWJX9LzytLYs45gwBBSk7VPdOhqhwkWU5yznLOQbYkp6r3
+        wQAADsEBuJFr7QAAO+pJREFUeF7tfWd329iWJX9LzytLYs45gwBBSk7VPdOhqhwkWU5yznLOQbYkp6r3
         ptf81jNr73MvAEKUK/RbPb2m68NelwQBELjnhpNP4lyqKWeTDVlP1mUjWZWzqZqcT1XlYroml1IV2UyW
         iSvZqlzJ1+VyviIXM0XZXMrL5hLaolxcKu3D+QWgELQXDhXkwkKe7fnFvJxbKszgwmLxm7i4MIvzh3Jy
         biEnZxcLsrFYkrWliqwma3IyVZefUjU5lWkHOJ1WrKabBg1ZzbaI09mOnMp05VSmLyfTvQCrmZ6s4rpU
@@ -1382,7 +1382,7 @@
   <data name="personaggio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMMAAAECCAYAAABDvGMPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7svQV0Vee2Nry2x40IEiDEPcGlpdTx4O4ed1xLS5EIwS2EGBIsuCXE
+        vAAADrwBlbxySQAA/7JJREFUeF7svQV0Vee2Nry2x40IEiDEPcGlpdTx4O4ed1xLS5EIwS2EGBIsuCXE
         PUBbWupuuMQ9zz/mXHuHlPTec+6593ynf1vGeMZaeyXZ7L3W+7zT5xQACH/jb/wNCG0u/I2/8VdFmwt/
         42/8VdHmwt/4G39VtLnwN/7GXxVtLvyNv/FXRZsLf+Nv/FXR5sLf+Bt/VbS58Df+xl8VbS78jb/xV0Wb
         C3/jb/xV0ebC3/gbf1W0ufA3/sZfFW0u/BXR2NSkrKysav/46VPbx0+e2j599qzbs7KyrmXl5Z3Lyiss
@@ -2554,7 +2554,7 @@
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>69</value>
+    <value>25</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
