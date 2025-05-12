@@ -21,8 +21,9 @@ namespace FallingThing_s
         int velocitaPersonaggio= 6;
         bool giocoFinito = false; 
         int cuori = 3;
-        SoundPlayer Musichetta = new SoundPlayer(Properties.Resources.Relaxing);
-        
+        SoundPlayer Musichetta = new SoundPlayer(Properties.Resources.soundtrack);
+        SoundPlayer danno = new SoundPlayer(Properties.Resources.DannoSubito);
+       
 
         Image[] immagini = new Image[10]
         {
@@ -153,15 +154,20 @@ namespace FallingThing_s
                         switch (cuori)
                         {
                             case 3:
+
                                 cuore3.Visible = false;
+                                danno.Play();
+
                                 cuori--;
                                 break;
                             case 2:
                                 cuore2.Visible = false;
+                                danno.Play();
                                 cuori--;
                                 break;
                             case 1:
                                 cuore1.Visible = false;
+                                danno.Play();
                                 cuori--;
                                  giocoFinito = true;
                                 timerPersonaggio.Stop();

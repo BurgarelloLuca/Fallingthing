@@ -127,6 +127,12 @@
   <data name="Cuore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cuor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="danno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\danno.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DannoSubito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minecraft_hit_soundmp3converter (online-audio-converter.com) (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Flopper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,6 +162,9 @@
   </data>
   <data name="Ruota" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ruota.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soundtrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soundtrack Falling things.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Tronco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tronc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

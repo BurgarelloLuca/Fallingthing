@@ -91,6 +91,24 @@ namespace FallingThing_s.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream danno {
+            get {
+                return ResourceManager.GetStream("danno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream DannoSubito {
+            get {
+                return ResourceManager.GetStream("DannoSubito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Flopper {
@@ -185,6 +203,15 @@ namespace FallingThing_s.Properties {
             get {
                 object obj = ResourceManager.GetObject("Ruota", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream soundtrack {
+            get {
+                return ResourceManager.GetStream("soundtrack", resourceCulture);
             }
         }
         
