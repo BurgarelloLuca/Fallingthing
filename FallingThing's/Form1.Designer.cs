@@ -41,8 +41,12 @@
             this.tronco = new System.Windows.Forms.PictureBox();
             this.lblTesto = new System.Windows.Forms.Label();
             this.Oggetto2 = new System.Windows.Forms.PictureBox();
-            this.personaggio = new System.Windows.Forms.PictureBox();
             this.lblTerreno = new System.Windows.Forms.Label();
+            this.personaggio = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEXIT = new System.Windows.Forms.Button();
+            this.btnIstruzioni = new System.Windows.Forms.Button();
+            this.btnPLAY = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuore3)).BeginInit();
@@ -51,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tronco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaggio)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timerPersonaggio
@@ -79,7 +84,6 @@
             this.lblPunteggio.TabIndex = 3;
             this.lblPunteggio.Text = "0 Kcal";
             this.lblPunteggio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblPunteggio.Click += new System.EventHandler(this.lblPunteggio_Click);
             // 
             // Oggetto1
             // 
@@ -170,7 +174,6 @@
             this.lblTesto.TabIndex = 1;
             this.lblTesto.Text = "Ti stai saziando?";
             this.lblTesto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTesto.Click += new System.EventHandler(this.lblTesto_Click);
             // 
             // Oggetto2
             // 
@@ -184,20 +187,6 @@
             this.Oggetto2.TabIndex = 1;
             this.Oggetto2.TabStop = false;
             // 
-            // personaggio
-            // 
-            this.personaggio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.personaggio.BackColor = System.Drawing.Color.Transparent;
-            this.personaggio.Image = ((System.Drawing.Image)(resources.GetObject("personaggio.Image")));
-            this.personaggio.Location = new System.Drawing.Point(703, 437);
-            this.personaggio.Margin = new System.Windows.Forms.Padding(2);
-            this.personaggio.Name = "personaggio";
-            this.personaggio.Size = new System.Drawing.Size(95, 132);
-            this.personaggio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.personaggio.TabIndex = 0;
-            this.personaggio.TabStop = false;
-            this.personaggio.Click += new System.EventHandler(this.personaggio_Click);
-            // 
             // lblTerreno
             // 
             this.lblTerreno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -209,6 +198,61 @@
             this.lblTerreno.TabIndex = 10;
             this.lblTerreno.Visible = false;
             // 
+            // personaggio
+            // 
+            this.personaggio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.personaggio.BackColor = System.Drawing.Color.Transparent;
+            this.personaggio.Image = ((System.Drawing.Image)(resources.GetObject("personaggio.Image")));
+            this.personaggio.Location = new System.Drawing.Point(635, 418);
+            this.personaggio.Margin = new System.Windows.Forms.Padding(2);
+            this.personaggio.Name = "personaggio";
+            this.personaggio.Size = new System.Drawing.Size(95, 132);
+            this.personaggio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.personaggio.TabIndex = 0;
+            this.personaggio.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnEXIT);
+            this.panel1.Controls.Add(this.btnIstruzioni);
+            this.panel1.Controls.Add(this.btnPLAY);
+            this.panel1.Location = new System.Drawing.Point(428, 75);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(493, 328);
+            this.panel1.TabIndex = 11;
+            // 
+            // btnEXIT
+            // 
+            this.btnEXIT.Location = new System.Drawing.Point(67, 224);
+            this.btnEXIT.Name = "btnEXIT";
+            this.btnEXIT.Size = new System.Drawing.Size(382, 46);
+            this.btnEXIT.TabIndex = 2;
+            this.btnEXIT.Text = "EXIT";
+            this.btnEXIT.UseVisualStyleBackColor = true;
+            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
+            // 
+            // btnIstruzioni
+            // 
+            this.btnIstruzioni.Location = new System.Drawing.Point(67, 140);
+            this.btnIstruzioni.Name = "btnIstruzioni";
+            this.btnIstruzioni.Size = new System.Drawing.Size(382, 46);
+            this.btnIstruzioni.TabIndex = 1;
+            this.btnIstruzioni.Text = "INSTRUCTIONS";
+            this.btnIstruzioni.UseVisualStyleBackColor = true;
+            this.btnIstruzioni.Click += new System.EventHandler(this.btnIstruzioni_Click);
+            // 
+            // btnPLAY
+            // 
+            this.btnPLAY.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPLAY.Location = new System.Drawing.Point(67, 44);
+            this.btnPLAY.Name = "btnPLAY";
+            this.btnPLAY.Size = new System.Drawing.Size(382, 46);
+            this.btnPLAY.TabIndex = 0;
+            this.btnPLAY.Text = "PLAY";
+            this.btnPLAY.UseVisualStyleBackColor = true;
+            this.btnPLAY.Click += new System.EventHandler(this.btnPLAY_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +260,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1544, 705);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.personaggio);
             this.Controls.Add(this.lblPunteggio);
             this.Controls.Add(this.lblTerreno);
             this.Controls.Add(this.lblTesto);
@@ -226,7 +272,6 @@
             this.Controls.Add(this.cuore1);
             this.Controls.Add(this.tronco);
             this.Controls.Add(this.Oggetto2);
-            this.Controls.Add(this.personaggio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -243,6 +288,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tronco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaggio)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,7 +297,6 @@
         #endregion
 
         private System.Windows.Forms.Timer timerPersonaggio;
-        private System.Windows.Forms.PictureBox personaggio;
         private System.Windows.Forms.PictureBox Oggetto2;
         private System.Windows.Forms.Timer timerCadutaOggetti;
         private System.Windows.Forms.Label lblTesto;
@@ -263,6 +308,11 @@
         private System.Windows.Forms.PictureBox Oggetto3;
         private System.Windows.Forms.PictureBox Oggetto1;
         private System.Windows.Forms.Label lblTerreno;
+        private System.Windows.Forms.PictureBox personaggio;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnEXIT;
+        private System.Windows.Forms.Button btnIstruzioni;
+        private System.Windows.Forms.Button btnPLAY;
     }
 }
 

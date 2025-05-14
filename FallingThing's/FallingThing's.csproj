@@ -146,5 +146,14 @@
   <ItemGroup>
     <None Include="Resources\minecraft_hit_soundmp3converter %28online-audio-converter.com%29 %281%29.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\munch-sound-effect %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mangia.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\munch-sound-effect_1_-_mp3cut.net_.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

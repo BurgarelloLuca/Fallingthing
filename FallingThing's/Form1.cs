@@ -11,19 +11,22 @@ using System.Windows.Forms;
 
 namespace FallingThing_s
 {
-  
-    public partial class Form1: Form
+
+    public partial class Form1 : Form
     {
 
         Random random = new Random();
         bool movimentoSinistra = false;
         bool movimentoDestra = false;
-        int velocitaPersonaggio= 6;
-        bool giocoFinito = false; 
+        int velocitaPersonaggio = 6;
+        bool giocoFinito = false;
         int cuori = 3;
-        SoundPlayer Musichetta = new SoundPlayer(Properties.Resources.soundtrack);
+      
+
+
         SoundPlayer danno = new SoundPlayer(Properties.Resources.DannoSubito);
-       
+      //  SoundPlayer Mangia = new SoundPlayer(Properties.Resources.Mangia);
+
 
         Image[] immagini = new Image[10]
         {
@@ -42,19 +45,19 @@ namespace FallingThing_s
         };
         int punteggio = 0;
         PictureBox[] oggettiCadenti;
-      
+
 
         public Form1()
-        { 
+        {
             InitializeComponent();
-            Musichetta.PlayLooping();
+          
             oggettiCadenti = new PictureBox[]
                 {
                 Oggetto1,
                 Oggetto2,
                 Oggetto3
             };
-            for(int i=0; i < oggettiCadenti.Length; i++)
+            for (int i = 0; i < oggettiCadenti.Length; i++)
             {
                 oggettiCadenti[i].Tag = -1;
             }
@@ -63,8 +66,8 @@ namespace FallingThing_s
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-        
-            if(e.KeyCode == Keys.A)
+
+            if (e.KeyCode == Keys.A)
             {
                 movimentoSinistra = true;
             }
@@ -111,10 +114,10 @@ namespace FallingThing_s
 
         private void timerCadutaOggetti_Tick(object sender, EventArgs e)
         {
-            int nuovoIndice;
+                int nuovoIndice;
             for (int i = 0; i < oggettiCadenti.Length; i++)
             {
-                int indice = (int)oggettiCadenti[i].Tag;    //indice immagine
+                int indice = (int)oggettiCadenti[i].Tag;    //indice immagine   
                 int velocita;
 
                 if (indice <= 3)
@@ -125,94 +128,92 @@ namespace FallingThing_s
                 {
                     velocita = 6;
                 }
-
-                oggettiCadenti[i].Top += velocita;
-                if (oggettiCadenti[i].Bounds.IntersectsWith(lblTerreno.Bounds))
-                {
-                    nuovoIndice = random.Next(0, immagini.Length);
-                    oggettiCadenti[i].Image = immagini[nuovoIndice];
-                    oggettiCadenti[i].Tag = nuovoIndice;
-                    oggettiCadenti[i].Top = 0;
-                    oggettiCadenti[i].Left = random.Next(0, this.ClientSize.Width - tronco.Width);
-                }
-                if (!giocoFinito && oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
-                {
-                    if (indice <= 3)
+                    oggettiCadenti[i].Top += velocita;
+                    if (oggettiCadenti[i].Bounds.IntersectsWith(lblTerreno.Bounds))
                     {
-                        punteggio += 100;
+                        nuovoIndice = random.Next(0, immagini.Length);
+                        oggettiCadenti[i].Image = immagini[nuovoIndice];
+                        oggettiCadenti[i].Tag = nuovoIndice;
+                        oggettiCadenti[i].Top = 0;
+                        oggettiCadenti[i].Left = random.Next(0, this.ClientSize.Width - tronco.Width);
                     }
-                    else if (indice <= 6)
+                    if (!giocoFinito && oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
                     {
-                        punteggio -= 200;
-                    }
-                    else
-                    {
-                        punteggio += 500;
-                    }
-                    if (indice < 7 && indice > 3)
-                    {
-                        switch (cuori)
+                        if (indice <= 3)
                         {
-                            case 3:
-
-                                cuore3.Visible = false;
-                                danno.Play();
-
-                                cuori--;
-                                break;
-                            case 2:
-                                cuore2.Visible = false;
-                                danno.Play();
-                                cuori--;
-                                break;
-                            case 1:
-                                cuore1.Visible = false;
-                                danno.Play();
-                                cuori--;
-                                 giocoFinito = true;
-                                timerPersonaggio.Stop();
-                                timerCadutaOggetti.Stop();
-                                MessageBox.Show("Hai perso!");
-                                this.Close();
-                                return;
-                                
-                            
-                               
+                            //   Mangia.Play();
+                            // Mangia.Stop();
+                            punteggio += 100;
                         }
+                        else if (indice <= 6)
+                        {
+                            punteggio -= 200;
+                        }
+                        else
+                        {
+                            //     Mangia.Play();
+                            punteggio += 500;
+                        }
+                        if (indice < 7 && indice > 3)
+                        {
+                            switch (cuori)
+                            {
+                                case 3:
+
+                                    cuore3.Visible = false;
+                                    danno.Play();
+
+                                    cuori--;
+                                    break;
+                                case 2:
+                                    cuore2.Visible = false;
+                                    danno.Play();
+                                    cuori--;
+                                    break;
+                                case 1:
+                                    cuore1.Visible = false;
+                                    danno.Play();
+                                    cuori--;
+                                    giocoFinito = true;
+                                    timerPersonaggio.Stop();
+                                    timerCadutaOggetti.Stop();
+                                    MessageBox.Show("Hai perso!");
+                                    this.Close();
+                                    return;
+                            }
+                        }
+
+                        nuovoIndice = random.Next(0, immagini.Length);
+                        oggettiCadenti[i].Image = immagini[nuovoIndice];
+                        oggettiCadenti[i].Tag = nuovoIndice;
+                        oggettiCadenti[i].Top = 0;
                     }
-                    nuovoIndice = random.Next(0, immagini.Length);
-                    oggettiCadenti[i].Image = immagini[nuovoIndice];
-                    oggettiCadenti[i].Tag = nuovoIndice;
-                    oggettiCadenti[i].Top = 0;
                 }
-            }
-            lblPunteggio.Text = punteggio + "Kcal";
+                lblPunteggio.Text = punteggio + "Kcal";
             
-        }
-
-        private void lblPunteggio_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTesto_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void personaggio_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
+            timerCadutaOggetti.Stop();
+        }
+
+        private void btnPLAY_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            timerCadutaOggetti.Start();
+        }
+
+        private void btnIstruzioni_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("A -- Sinistra;" +
+                "            D -- Destra");
+        }
+
+        private void btnEXIT_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
