@@ -118,35 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Anguria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\watermelon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cioccolato" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cioccolato.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cuore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cuor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="danno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\danno.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DannoSubito" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minecraft_hit_soundmp3converter (online-audio-converter.com) (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Flopper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fungo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fungoFallingThing-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hamburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BURGERRRR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LeccaLecca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LeccaLecca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mangia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\munch-sound-effect_1_-_mp3cut.net_.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Anguria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\watermelon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mela" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MELA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,19 +130,58 @@
   <data name="Peperoncino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Peperoncino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cioccolato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cioccolato.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Rottame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rottame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ruota" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ruota.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="soundtrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\soundtrack Falling things.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Cuore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cuor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tronco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tronc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tronco centro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tronco centro.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Flopper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ruota" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ruota.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fungo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fungoFallingThing-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LeccaLecca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeccaLecca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mangia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\munch-sound-effect_1_-_mp3cut.net_.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hamburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BURGERRRR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\options-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DannoSubito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minecraft_hit_soundmp3converter (online-audio-converter.com) (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pausa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image-removebg-preview (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Personaggio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skin (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Immagine_2025-05-21_094039-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sfondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sfondo (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soundtrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soundtrack Falling things.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

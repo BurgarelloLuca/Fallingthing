@@ -20,8 +20,8 @@ namespace FallingThing_s
         bool movimentoDestra = false;
         int velocitaPersonaggio = 6;
         bool giocoFinito = false;
+        bool pausa = false;
         int cuori = 3;
-      
 
 
         SoundPlayer danno = new SoundPlayer(Properties.Resources.DannoSubito);
@@ -66,7 +66,9 @@ namespace FallingThing_s
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if(!pausa)
+            {
+         
             if (e.KeyCode == Keys.A)
             {
                 movimentoSinistra = true;
@@ -75,7 +77,8 @@ namespace FallingThing_s
             {
                 movimentoDestra = true;
             }
-            timerPersonaggio.Start();
+            timerPersonaggio.Start();  
+            }
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
@@ -114,7 +117,7 @@ namespace FallingThing_s
 
         private void timerCadutaOggetti_Tick(object sender, EventArgs e)
         {
-                int nuovoIndice;
+            int nuovoIndice;
             for (int i = 0; i < oggettiCadenti.Length; i++)
             {
                 int indice = (int)oggettiCadenti[i].Tag;    //indice immagine   
@@ -156,6 +159,7 @@ namespace FallingThing_s
                         }
                         if (indice < 7 && indice > 3)
                         {
+                       
                             switch (cuori)
                             {
                                 case 3:
@@ -177,7 +181,7 @@ namespace FallingThing_s
                                     giocoFinito = true;
                                     timerPersonaggio.Stop();
                                     timerCadutaOggetti.Stop();
-                                    MessageBox.Show("Hai perso!");
+                                    MessageBox.Show($" Hai perso! \n Hai accomulato {(punteggio+200).ToString()} Kcal");
                                     this.Close();
                                     return;
                             }
@@ -195,25 +199,38 @@ namespace FallingThing_s
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pausa = true;
             this.DoubleBuffered = true;
             timerCadutaOggetti.Stop();
+            timerPersonaggio.Stop();
         }
 
         private void btnPLAY_Click(object sender, EventArgs e)
         {
+            pausa = false;
             panel1.Visible = false;
+            timerPersonaggio.Start();
             timerCadutaOggetti.Start();
+            Pausa.Visible = true;
         }
 
         private void btnIstruzioni_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("A -- Sinistra;" +
-                "            D -- Destra");
+            MessageBox.Show(" A -- Sinistra      D -- Destra \n evita i rottami,il peperoncino e la ruota \n mangia tutto il resto per accomulare più Kcal possibili \n alcuni cibi ti daranno più Kcal" );
         }
 
         private void btnEXIT_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Pausa_Click(object sender, EventArgs e)
+        {
+            pausa = true;
+            timerCadutaOggetti.Stop();
+            timerPersonaggio.Stop();
+            panel1.Visible = true;
+            Pausa.Visible = false;
         }
     }
 }

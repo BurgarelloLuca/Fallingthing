@@ -155,5 +155,35 @@
   <ItemGroup>
     <None Include="Resources\munch-sound-effect_1_-_mp3cut.net_.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %282%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\options-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Immagine_2025-05-21_094039-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfondo %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skin %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %283%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
