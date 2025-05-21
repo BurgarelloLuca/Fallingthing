@@ -245,6 +245,7 @@
             // btnPLAY
             // 
             this.btnPLAY.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPLAY.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnPLAY.Location = new System.Drawing.Point(67, 44);
             this.btnPLAY.Name = "btnPLAY";
             this.btnPLAY.Size = new System.Drawing.Size(382, 46);
