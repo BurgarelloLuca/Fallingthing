@@ -185,5 +185,8 @@
   <ItemGroup>
     <None Include="Resources\image-removebg-preview %283%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skib_real-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

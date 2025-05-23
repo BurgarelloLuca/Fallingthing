@@ -79,10 +79,9 @@
             this.lblPunteggio.Font = new System.Drawing.Font("SimSun-ExtB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPunteggio.ForeColor = System.Drawing.Color.White;
             this.lblPunteggio.Image = ((System.Drawing.Image)(resources.GetObject("lblPunteggio.Image")));
-            this.lblPunteggio.Location = new System.Drawing.Point(1278, 513);
-            this.lblPunteggio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPunteggio.Location = new System.Drawing.Point(1704, 631);
             this.lblPunteggio.Name = "lblPunteggio";
-            this.lblPunteggio.Size = new System.Drawing.Size(75, 19);
+            this.lblPunteggio.Size = new System.Drawing.Size(88, 24);
             this.lblPunteggio.TabIndex = 3;
             this.lblPunteggio.Text = "0 Kcal";
             this.lblPunteggio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,10 +90,10 @@
             // 
             this.Oggetto1.BackColor = System.Drawing.Color.Transparent;
             this.Oggetto1.Image = global::FallingThing_s.Properties.Resources.Flopper;
-            this.Oggetto1.Location = new System.Drawing.Point(498, 11);
-            this.Oggetto1.Margin = new System.Windows.Forms.Padding(2);
+            this.Oggetto1.Location = new System.Drawing.Point(666, -100);
+            this.Oggetto1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Oggetto1.Name = "Oggetto1";
-            this.Oggetto1.Size = new System.Drawing.Size(56, 59);
+            this.Oggetto1.Size = new System.Drawing.Size(73, 73);
             this.Oggetto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Oggetto1.TabIndex = 9;
             this.Oggetto1.TabStop = false;
@@ -103,10 +102,10 @@
             // 
             this.Oggetto3.BackColor = System.Drawing.Color.Transparent;
             this.Oggetto3.Image = global::FallingThing_s.Properties.Resources.Rottame;
-            this.Oggetto3.Location = new System.Drawing.Point(838, 11);
-            this.Oggetto3.Margin = new System.Windows.Forms.Padding(2);
+            this.Oggetto3.Location = new System.Drawing.Point(1117, -2700);
+            this.Oggetto3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Oggetto3.Name = "Oggetto3";
-            this.Oggetto3.Size = new System.Drawing.Size(58, 59);
+            this.Oggetto3.Size = new System.Drawing.Size(77, 73);
             this.Oggetto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Oggetto3.TabIndex = 8;
             this.Oggetto3.TabStop = false;
@@ -115,10 +114,10 @@
             // 
             this.cuore3.BackColor = System.Drawing.Color.Transparent;
             this.cuore3.Image = global::FallingThing_s.Properties.Resources.Cuore;
-            this.cuore3.Location = new System.Drawing.Point(92, 10);
-            this.cuore3.Margin = new System.Windows.Forms.Padding(2);
+            this.cuore3.Location = new System.Drawing.Point(120, 12);
+            this.cuore3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cuore3.Name = "cuore3";
-            this.cuore3.Size = new System.Drawing.Size(51, 40);
+            this.cuore3.Size = new System.Drawing.Size(54, 49);
             this.cuore3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cuore3.TabIndex = 7;
             this.cuore3.TabStop = false;
@@ -127,10 +126,10 @@
             // 
             this.cuore2.BackColor = System.Drawing.Color.Transparent;
             this.cuore2.Image = global::FallingThing_s.Properties.Resources.Cuore;
-            this.cuore2.Location = new System.Drawing.Point(48, 10);
-            this.cuore2.Margin = new System.Windows.Forms.Padding(2);
+            this.cuore2.Location = new System.Drawing.Point(64, 12);
+            this.cuore2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cuore2.Name = "cuore2";
-            this.cuore2.Size = new System.Drawing.Size(46, 40);
+            this.cuore2.Size = new System.Drawing.Size(61, 49);
             this.cuore2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cuore2.TabIndex = 6;
             this.cuore2.TabStop = false;
@@ -139,10 +138,10 @@
             // 
             this.cuore1.BackColor = System.Drawing.Color.Transparent;
             this.cuore1.Image = global::FallingThing_s.Properties.Resources.Cuore;
-            this.cuore1.Location = new System.Drawing.Point(9, 10);
-            this.cuore1.Margin = new System.Windows.Forms.Padding(2);
+            this.cuore1.Location = new System.Drawing.Point(12, 12);
+            this.cuore1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cuore1.Name = "cuore1";
-            this.cuore1.Size = new System.Drawing.Size(44, 40);
+            this.cuore1.Size = new System.Drawing.Size(59, 49);
             this.cuore1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cuore1.TabIndex = 5;
             this.cuore1.TabStop = false;
@@ -153,10 +152,10 @@
             this.tronco.BackColor = System.Drawing.Color.Transparent;
             this.tronco.Image = global::FallingThing_s.Properties.Resources.Tronco;
             this.tronco.InitialImage = null;
-            this.tronco.Location = new System.Drawing.Point(1183, 428);
-            this.tronco.Margin = new System.Windows.Forms.Padding(2);
+            this.tronco.Location = new System.Drawing.Point(1577, 527);
+            this.tronco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tronco.Name = "tronco";
-            this.tronco.Size = new System.Drawing.Size(225, 135);
+            this.tronco.Size = new System.Drawing.Size(300, 166);
             this.tronco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.tronco.TabIndex = 4;
             this.tronco.TabStop = false;
@@ -168,10 +167,9 @@
             this.lblTesto.Font = new System.Drawing.Font("SimSun-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTesto.ForeColor = System.Drawing.Color.White;
             this.lblTesto.Image = ((System.Drawing.Image)(resources.GetObject("lblTesto.Image")));
-            this.lblTesto.Location = new System.Drawing.Point(1261, 462);
-            this.lblTesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTesto.Location = new System.Drawing.Point(1681, 569);
             this.lblTesto.Name = "lblTesto";
-            this.lblTesto.Size = new System.Drawing.Size(102, 51);
+            this.lblTesto.Size = new System.Drawing.Size(136, 63);
             this.lblTesto.TabIndex = 1;
             this.lblTesto.Text = "Ti stai saziando?";
             this.lblTesto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -180,10 +178,10 @@
             // 
             this.Oggetto2.BackColor = System.Drawing.Color.Transparent;
             this.Oggetto2.Image = ((System.Drawing.Image)(resources.GetObject("Oggetto2.Image")));
-            this.Oggetto2.Location = new System.Drawing.Point(653, 11);
-            this.Oggetto2.Margin = new System.Windows.Forms.Padding(2);
+            this.Oggetto2.Location = new System.Drawing.Point(871, -1500);
+            this.Oggetto2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Oggetto2.Name = "Oggetto2";
-            this.Oggetto2.Size = new System.Drawing.Size(58, 59);
+            this.Oggetto2.Size = new System.Drawing.Size(61, 60);
             this.Oggetto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Oggetto2.TabIndex = 1;
             this.Oggetto2.TabStop = false;
@@ -193,9 +191,10 @@
             this.lblTerreno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTerreno.BackColor = System.Drawing.Color.Transparent;
-            this.lblTerreno.Location = new System.Drawing.Point(9, 565);
+            this.lblTerreno.Location = new System.Drawing.Point(12, 695);
+            this.lblTerreno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTerreno.Name = "lblTerreno";
-            this.lblTerreno.Size = new System.Drawing.Size(1636, 29);
+            this.lblTerreno.Size = new System.Drawing.Size(2181, 36);
             this.lblTerreno.TabIndex = 10;
             this.lblTerreno.Visible = false;
             // 
@@ -204,10 +203,10 @@
             this.personaggio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.personaggio.BackColor = System.Drawing.Color.Transparent;
             this.personaggio.Image = ((System.Drawing.Image)(resources.GetObject("personaggio.Image")));
-            this.personaggio.Location = new System.Drawing.Point(635, 418);
-            this.personaggio.Margin = new System.Windows.Forms.Padding(2);
+            this.personaggio.Location = new System.Drawing.Point(840, 502);
+            this.personaggio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.personaggio.Name = "personaggio";
-            this.personaggio.Size = new System.Drawing.Size(95, 132);
+            this.personaggio.Size = new System.Drawing.Size(178, 191);
             this.personaggio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.personaggio.TabIndex = 0;
             this.personaggio.TabStop = false;
@@ -218,17 +217,19 @@
             this.panel1.Controls.Add(this.btnEXIT);
             this.panel1.Controls.Add(this.btnIstruzioni);
             this.panel1.Controls.Add(this.btnPLAY);
-            this.panel1.Location = new System.Drawing.Point(428, 75);
+            this.panel1.Location = new System.Drawing.Point(571, 92);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(493, 328);
+            this.panel1.Size = new System.Drawing.Size(657, 404);
             this.panel1.TabIndex = 11;
             // 
             // btnEXIT
             // 
             this.btnEXIT.Image = global::FallingThing_s.Properties.Resources.Exit;
-            this.btnEXIT.Location = new System.Drawing.Point(151, 218);
+            this.btnEXIT.Location = new System.Drawing.Point(201, 268);
+            this.btnEXIT.Margin = new System.Windows.Forms.Padding(4);
             this.btnEXIT.Name = "btnEXIT";
-            this.btnEXIT.Size = new System.Drawing.Size(195, 53);
+            this.btnEXIT.Size = new System.Drawing.Size(260, 65);
             this.btnEXIT.TabIndex = 2;
             this.btnEXIT.UseVisualStyleBackColor = true;
             this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
@@ -236,9 +237,10 @@
             // btnIstruzioni
             // 
             this.btnIstruzioni.Image = global::FallingThing_s.Properties.Resources.Options;
-            this.btnIstruzioni.Location = new System.Drawing.Point(151, 137);
+            this.btnIstruzioni.Location = new System.Drawing.Point(201, 169);
+            this.btnIstruzioni.Margin = new System.Windows.Forms.Padding(4);
             this.btnIstruzioni.Name = "btnIstruzioni";
-            this.btnIstruzioni.Size = new System.Drawing.Size(195, 52);
+            this.btnIstruzioni.Size = new System.Drawing.Size(260, 64);
             this.btnIstruzioni.TabIndex = 1;
             this.btnIstruzioni.UseVisualStyleBackColor = true;
             this.btnIstruzioni.Click += new System.EventHandler(this.btnIstruzioni_Click);
@@ -248,9 +250,10 @@
             this.btnPLAY.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPLAY.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnPLAY.Image = global::FallingThing_s.Properties.Resources.Play;
-            this.btnPLAY.Location = new System.Drawing.Point(151, 60);
+            this.btnPLAY.Location = new System.Drawing.Point(201, 74);
+            this.btnPLAY.Margin = new System.Windows.Forms.Padding(4);
             this.btnPLAY.Name = "btnPLAY";
-            this.btnPLAY.Size = new System.Drawing.Size(195, 49);
+            this.btnPLAY.Size = new System.Drawing.Size(260, 60);
             this.btnPLAY.TabIndex = 0;
             this.btnPLAY.UseVisualStyleBackColor = true;
             this.btnPLAY.Click += new System.EventHandler(this.btnPLAY_Click);
@@ -259,9 +262,10 @@
             // 
             this.Pausa.BackColor = System.Drawing.Color.Transparent;
             this.Pausa.Image = ((System.Drawing.Image)(resources.GetObject("Pausa.Image")));
-            this.Pausa.Location = new System.Drawing.Point(1263, 10);
+            this.Pausa.Location = new System.Drawing.Point(1684, 12);
+            this.Pausa.Margin = new System.Windows.Forms.Padding(4);
             this.Pausa.Name = "Pausa";
-            this.Pausa.Size = new System.Drawing.Size(100, 50);
+            this.Pausa.Size = new System.Drawing.Size(133, 62);
             this.Pausa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pausa.TabIndex = 12;
             this.Pausa.TabStop = false;
@@ -270,11 +274,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1364, 705);
+            this.ClientSize = new System.Drawing.Size(1819, 868);
             this.Controls.Add(this.Pausa);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.personaggio);
@@ -290,9 +294,9 @@
             this.Controls.Add(this.Oggetto2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "aaa";
+            this.Text = "FallingThings";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);

@@ -24,10 +24,6 @@ namespace FallingThing_s
         int cuori = 3;
 
 
-        SoundPlayer danno = new SoundPlayer(Properties.Resources.DannoSubito);
-      //  SoundPlayer Mangia = new SoundPlayer(Properties.Resources.Mangia);
-
-
         Image[] immagini = new Image[10]
         {
             Properties.Resources.Fungo,
@@ -129,7 +125,7 @@ namespace FallingThing_s
                 }
                 else
                 {
-                    velocita = 6;
+                    velocita = 7;
                 }
                     oggettiCadenti[i].Top += velocita;
                     if (oggettiCadenti[i].Bounds.IntersectsWith(lblTerreno.Bounds))
@@ -144,8 +140,6 @@ namespace FallingThing_s
                     {
                         if (indice <= 3)
                         {
-                            //   Mangia.Play();
-                            // Mangia.Stop();
                             punteggio += 100;
                         }
                         else if (indice <= 6)
@@ -154,7 +148,6 @@ namespace FallingThing_s
                         }
                         else
                         {
-                            //     Mangia.Play();
                             punteggio += 500;
                         }
                         if (indice < 7 && indice > 3)
@@ -165,23 +158,19 @@ namespace FallingThing_s
                                 case 3:
 
                                     cuore3.Visible = false;
-                                    danno.Play();
-
                                     cuori--;
                                     break;
                                 case 2:
                                     cuore2.Visible = false;
-                                    danno.Play();
                                     cuori--;
                                     break;
                                 case 1:
                                     cuore1.Visible = false;
-                                    danno.Play();
                                     cuori--;
                                     giocoFinito = true;
                                     timerPersonaggio.Stop();
                                     timerCadutaOggetti.Stop();
-                                    MessageBox.Show($" Hai perso! \n Hai accomulato {(punteggio+200).ToString()} Kcal");
+                                    MessageBox.Show($" Hai perso! \n Hai accomulato {(punteggio+200).ToString()} kcal");
                                     this.Close();
                                     return;
                             }
@@ -193,7 +182,7 @@ namespace FallingThing_s
                         oggettiCadenti[i].Top = 0;
                     }
                 }
-                lblPunteggio.Text = punteggio + "Kcal";
+                lblPunteggio.Text = punteggio + "kcal";
             
         }
 
@@ -216,7 +205,7 @@ namespace FallingThing_s
 
         private void btnIstruzioni_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" A -- Sinistra      D -- Destra \n evita i rottami,il peperoncino e la ruota \n mangia tutto il resto per accomulare più Kcal possibili \n alcuni cibi ti daranno più Kcal" );
+            MessageBox.Show(" A -- Sinistra      D -- Destra \n Evita i rottami, il peperoncino e la ruota \n Mangia tutto il resto per accomulare più kcal possibili \n La barretta cioccolato, il pesce e l hamburger ti daranno più kcal" );
         }
 
         private void btnEXIT_Click(object sender, EventArgs e)

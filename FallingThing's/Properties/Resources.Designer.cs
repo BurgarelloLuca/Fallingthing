@@ -93,18 +93,9 @@ namespace FallingThing_s.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream danno {
+        internal static System.IO.UnmanagedMemoryStream Danno {
             get {
-                return ResourceManager.GetStream("danno", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream DannoSubito {
-            get {
-                return ResourceManager.GetStream("DannoSubito", resourceCulture);
+                return ResourceManager.GetStream("Danno", resourceCulture);
             }
         }
         
@@ -210,9 +201,9 @@ namespace FallingThing_s.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Personaggio {
+        internal static System.Drawing.Bitmap personaggio {
             get {
-                object obj = ResourceManager.GetObject("Personaggio", resourceCulture);
+                object obj = ResourceManager.GetObject("personaggio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -260,9 +251,9 @@ namespace FallingThing_s.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream soundtrack {
+        internal static System.IO.UnmanagedMemoryStream Soundtrack {
             get {
-                return ResourceManager.GetStream("soundtrack", resourceCulture);
+                return ResourceManager.GetStream("Soundtrack", resourceCulture);
             }
         }
         
