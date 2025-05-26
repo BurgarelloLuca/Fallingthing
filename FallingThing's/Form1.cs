@@ -46,7 +46,7 @@ namespace FallingThing_s
         public Form1()
         {
             InitializeComponent();
-          
+
             oggettiCadenti = new PictureBox[]
                 {
                 Oggetto1,
@@ -62,18 +62,18 @@ namespace FallingThing_s
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if(!pausa)
+            if (!pausa)
             {
-         
-            if (e.KeyCode == Keys.A)
-            {
-                movimentoSinistra = true;
-            }
-            else if (e.KeyCode == Keys.D)
-            {
-                movimentoDestra = true;
-            }
-            timerPersonaggio.Start();  
+
+                if (e.KeyCode == Keys.A)
+                {
+                    movimentoSinistra = true;
+                }
+                else if (e.KeyCode == Keys.D)
+                {
+                    movimentoDestra = true;
+                }
+                timerPersonaggio.Start();
             }
         }
 
@@ -127,63 +127,64 @@ namespace FallingThing_s
                 {
                     velocita = 7;
                 }
-                    oggettiCadenti[i].Top += velocita;
-                    if (oggettiCadenti[i].Bounds.IntersectsWith(lblTerreno.Bounds))
-                    {
-                        nuovoIndice = random.Next(0, immagini.Length);
-                        oggettiCadenti[i].Image = immagini[nuovoIndice];
-                        oggettiCadenti[i].Tag = nuovoIndice;
-                        oggettiCadenti[i].Top = 0;
-                        oggettiCadenti[i].Left = random.Next(0, this.ClientSize.Width - tronco.Width);
-                    }
-                    if (!giocoFinito && oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
-                    {
-                        if (indice <= 3)
-                        {
-                            punteggio += 100;
-                        }
-                        else if (indice <= 6)
-                        {
-                            punteggio -= 200;
-                        }
-                        else
-                        {
-                            punteggio += 500;
-                        }
-                        if (indice < 7 && indice > 3)
-                        {
-                       
-                            switch (cuori)
-                            {
-                                case 3:
-
-                                    cuore3.Visible = false;
-                                    cuori--;
-                                    break;
-                                case 2:
-                                    cuore2.Visible = false;
-                                    cuori--;
-                                    break;
-                                case 1:
-                                    cuore1.Visible = false;
-                                    cuori--;
-                                    giocoFinito = true;
-                                    timerPersonaggio.Stop();
-                                    timerCadutaOggetti.Stop();
-                                    MessageBox.Show($" Hai perso! \n Hai accomulato {(punteggio+200).ToString()} kcal");
-                                    this.Close();
-                                    return;
-                            }
-                        }
-
-                        nuovoIndice = random.Next(0, immagini.Length);
-                        oggettiCadenti[i].Image = immagini[nuovoIndice];
-                        oggettiCadenti[i].Tag = nuovoIndice;
-                        oggettiCadenti[i].Top = 0;
-                    }
+                oggettiCadenti[i].Top += velocita;
+                if (oggettiCadenti[i].Bounds.IntersectsWith(lblTerreno.Bounds))
+                {
+                    nuovoIndice = random.Next(0, immagini.Length);
+                    oggettiCadenti[i].Image = immagini[nuovoIndice];
+                    oggettiCadenti[i].Tag = nuovoIndice;
+                    oggettiCadenti[i].Top = 0;
+                    oggettiCadenti[i].Left = random.Next(0, this.ClientSize.Width - tronco.Width);
                 }
-                lblPunteggio.Text = punteggio + "kcal";
-            
+                if (!giocoFinito && oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
+                {
+                    if (indice <= 3)
+                    {
+                        punteggio += 100;
+                    }
+                    else if (indice <= 6)
+                    {
+                        punteggio -= 200;
+                    }
+                    else
+                    {
+                        punteggio += 500;
+                    }
+                    if (indice < 7 && indice > 3)
+                    {
+
+                        switch (cuori)
+                        {
+                            case 3:
+
+                                cuore3.Visible = false;
+                                cuori--;
+                                break;
+                            case 2:
+                                cuore2.Visible = false;
+                                cuori--;
+                                break;
+                            case 1:
+                                cuore1.Visible = false;
+                                cuori--;
+                                personaggio.Visible = false;
+                                giocoFinito = true;
+                                timerPersonaggio.Stop();
+                                timerCadutaOggetti.Stop();
+                                MessageBox.Show($" Hai perso! \n Hai accomulato {(punteggio + 200).ToString()} kcal");
+                                this.Close();
+                                return;
+                        }
+                    }
+
+                    nuovoIndice = random.Next(0, immagini.Length);
+                    oggettiCadenti[i].Image = immagini[nuovoIndice];
+                    oggettiCadenti[i].Tag = nuovoIndice;
+                    oggettiCadenti[i].Top = 0;
+                }
+            }
+            lblPunteggio.Text = punteggio + "kcal";
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -205,7 +206,7 @@ namespace FallingThing_s
 
         private void btnIstruzioni_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" A -- Sinistra      D -- Destra \n Evita i rottami, il peperoncino e la ruota \n Mangia tutto il resto per accomulare più kcal possibili \n La barretta cioccolato, il pesce e l hamburger ti daranno più kcal" );
+            MessageBox.Show(" A -- Sinistra      D -- Destra \n Evita i rottami, il peperoncino e la ruota \n Mangia tutto il resto per accomulare più kcal possibili \n La barretta cioccolato, il pesce e l hamburger ti daranno più kcal");
         }
 
         private void btnEXIT_Click(object sender, EventArgs e)
