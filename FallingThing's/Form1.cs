@@ -143,18 +143,9 @@ namespace FallingThing_s
                         punteggio += 100;
 
                     }
-                    else if (indice <= 6)
+                    else if (indice <= 6 && indice >= 4)
                     {
                         punteggio -= 200;
-                    }
-                    else
-                    {
-                        punteggio += 500;
-
-                    }
-                    if (indice < 7 && indice > 3)
-                    {
-
                         switch (cuori)
                         {
                             case 3:
@@ -172,7 +163,7 @@ namespace FallingThing_s
                                 cuore1.Visible = false;
                                 cuori--;
                                 personaggio.Visible = false;
-                     
+
                                 pctGameOver.Visible = true;
                                 lblPunteggioFinale.Visible = true;
                                 timerPersonaggio.Stop();
@@ -193,6 +184,12 @@ namespace FallingThing_s
                                 return;
                         }
                     }
+                
+                    else
+                    {
+                        punteggio += 500;
+
+                    }  
 
                     nuovoIndice = random.Next(0, immagini.Length);
                     oggettiCadenti[i].Image = immagini[nuovoIndice];
