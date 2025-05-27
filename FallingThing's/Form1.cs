@@ -261,6 +261,27 @@ namespace FallingThing_s
             Oggetto2.Visible = false;
             Oggetto3.Visible = false;
         }
+
+        private void pctGameOver_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void pctMuta_Click(object sender, EventArgs e)
+        {
+            soundtrack.Stop();
+            pctMuta.Visible = false;
+            ptcAudio.Visible = true;
+        }
+
+        private void ptcAudio_Click(object sender, EventArgs e)
+        {
+            soundtrack.PlayLooping();
+            ptcAudio.Visible = false;
+            pctMuta.Visible = true;
+        }
     }
 }
 

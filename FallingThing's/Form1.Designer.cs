@@ -44,12 +44,14 @@
             this.lblTerreno = new System.Windows.Forms.Label();
             this.personaggio = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pctGameOver = new System.Windows.Forms.PictureBox();
             this.btnEXIT = new System.Windows.Forms.Button();
             this.btnIstruzioni = new System.Windows.Forms.Button();
             this.btnPLAY = new System.Windows.Forms.Button();
+            this.pctGameOver = new System.Windows.Forms.PictureBox();
             this.Pausa = new System.Windows.Forms.PictureBox();
             this.lblPunteggioFinale = new System.Windows.Forms.Label();
+            this.ptcAudio = new System.Windows.Forms.PictureBox();
+            this.pctMuta = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuore3)).BeginInit();
@@ -61,6 +63,8 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctGameOver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pausa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcAudio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctMuta)).BeginInit();
             this.SuspendLayout();
             // 
             // timerPersonaggio
@@ -226,18 +230,6 @@
             this.panel1.Size = new System.Drawing.Size(493, 328);
             this.panel1.TabIndex = 11;
             // 
-            // pctGameOver
-            // 
-            this.pctGameOver.BackColor = System.Drawing.Color.Transparent;
-            this.pctGameOver.Image = global::FallingThing_s.Properties.Resources.game_OVER;
-            this.pctGameOver.Location = new System.Drawing.Point(17, 72);
-            this.pctGameOver.Name = "pctGameOver";
-            this.pctGameOver.Size = new System.Drawing.Size(415, 324);
-            this.pctGameOver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctGameOver.TabIndex = 14;
-            this.pctGameOver.TabStop = false;
-            this.pctGameOver.Visible = false;
-            // 
             // btnEXIT
             // 
             this.btnEXIT.Image = global::FallingThing_s.Properties.Resources.Exit;
@@ -270,6 +262,19 @@
             this.btnPLAY.UseVisualStyleBackColor = true;
             this.btnPLAY.Click += new System.EventHandler(this.btnPLAY_Click);
             // 
+            // pctGameOver
+            // 
+            this.pctGameOver.BackColor = System.Drawing.Color.Transparent;
+            this.pctGameOver.Image = global::FallingThing_s.Properties.Resources.game_OVER;
+            this.pctGameOver.Location = new System.Drawing.Point(-67, 41);
+            this.pctGameOver.Name = "pctGameOver";
+            this.pctGameOver.Size = new System.Drawing.Size(564, 351);
+            this.pctGameOver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctGameOver.TabIndex = 14;
+            this.pctGameOver.TabStop = false;
+            this.pctGameOver.Visible = false;
+            this.pctGameOver.Click += new System.EventHandler(this.pctGameOver_Click);
+            // 
             // Pausa
             // 
             this.Pausa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -277,7 +282,7 @@
             this.Pausa.Image = ((System.Drawing.Image)(resources.GetObject("Pausa.Image")));
             this.Pausa.Location = new System.Drawing.Point(1263, 10);
             this.Pausa.Name = "Pausa";
-            this.Pausa.Size = new System.Drawing.Size(100, 50);
+            this.Pausa.Size = new System.Drawing.Size(81, 50);
             this.Pausa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pausa.TabIndex = 12;
             this.Pausa.TabStop = false;
@@ -297,6 +302,30 @@
             this.lblPunteggioFinale.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lblPunteggioFinale.Visible = false;
             // 
+            // ptcAudio
+            // 
+            this.ptcAudio.BackColor = System.Drawing.Color.Transparent;
+            this.ptcAudio.Image = global::FallingThing_s.Properties.Resources.AUDIOO;
+            this.ptcAudio.Location = new System.Drawing.Point(1212, 16);
+            this.ptcAudio.Name = "ptcAudio";
+            this.ptcAudio.Size = new System.Drawing.Size(45, 34);
+            this.ptcAudio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcAudio.TabIndex = 15;
+            this.ptcAudio.TabStop = false;
+            this.ptcAudio.Click += new System.EventHandler(this.ptcAudio_Click);
+            // 
+            // pctMuta
+            // 
+            this.pctMuta.BackColor = System.Drawing.Color.Transparent;
+            this.pctMuta.Image = ((System.Drawing.Image)(resources.GetObject("pctMuta.Image")));
+            this.pctMuta.Location = new System.Drawing.Point(1153, 16);
+            this.pctMuta.Name = "pctMuta";
+            this.pctMuta.Size = new System.Drawing.Size(53, 34);
+            this.pctMuta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctMuta.TabIndex = 16;
+            this.pctMuta.TabStop = false;
+            this.pctMuta.Click += new System.EventHandler(this.pctMuta_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,10 +333,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1364, 705);
-            this.Controls.Add(this.pctGameOver);
+            this.Controls.Add(this.pctMuta);
+            this.Controls.Add(this.ptcAudio);
             this.Controls.Add(this.lblPunteggioFinale);
             this.Controls.Add(this.Pausa);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pctGameOver);
             this.Controls.Add(this.personaggio);
             this.Controls.Add(this.lblPunteggio);
             this.Controls.Add(this.lblTerreno);
@@ -339,6 +370,8 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctGameOver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pausa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcAudio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctMuta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,6 +399,8 @@
         private System.Windows.Forms.PictureBox Pausa;
         private System.Windows.Forms.Label lblPunteggioFinale;
         private System.Windows.Forms.PictureBox pctGameOver;
+        private System.Windows.Forms.PictureBox ptcAudio;
+        private System.Windows.Forms.PictureBox pctMuta;
     }
 }
 
