@@ -19,7 +19,6 @@ namespace FallingThing_s
         bool movimentoSinistra = false;
         bool movimentoDestra = false;
         int velocitaPersonaggio = 6;
-        bool giocoFinito = false;
         bool pausa = false;
         int cuori = 3;
         SoundPlayer soundtrack = new SoundPlayer(Properties.Resources.Soundtrack);
@@ -137,7 +136,7 @@ namespace FallingThing_s
                     oggettiCadenti[i].Top = 0;
                     oggettiCadenti[i].Left = random.Next(0, this.ClientSize.Width - tronco.Width);
                 }
-                if (!giocoFinito && oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
+                if ( oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
                 {
                     if (indice <= 3)
                     {
@@ -172,9 +171,8 @@ namespace FallingThing_s
                             case 1:
                                 cuore1.Visible = false;
                                 cuori--;
-
                                 personaggio.Visible = false;
-                                giocoFinito = true;
+                     
                                 pctGameOver.Visible = true;
                                 lblPunteggioFinale.Visible = true;
                                 timerPersonaggio.Stop();
@@ -187,8 +185,11 @@ namespace FallingThing_s
                                 Oggetto1.Visible = false;
                                 Oggetto2.Visible = false;
                                 Oggetto3.Visible = false;
-                                
-
+                                btnIstruzioni.Visible = false;
+                                btnPLAY.Visible = false;
+                                panel1.Visible = true;
+                                pctMuta.Visible = false;
+                                ptcAudio.Visible = false;
                                 return;
                         }
                     }
@@ -216,6 +217,7 @@ namespace FallingThing_s
             cuore2.Visible = false;
             cuore3.Visible = false;
             soundtrack.PlayLooping();
+            ptcAudio.Visible = false;
         }
 
         private void btnPLAY_Click(object sender, EventArgs e)
@@ -229,7 +231,6 @@ namespace FallingThing_s
             cuore1.Visible = true;
             cuore2.Visible = true;
             cuore3.Visible = true;
-            soundtrack.PlayLooping();
             pctGameOver.Visible = false;
             lblPunteggioFinale.Visible = false;
             Oggetto1.Visible = true;

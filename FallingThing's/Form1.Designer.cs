@@ -224,7 +224,9 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnEXIT);
             this.panel1.Controls.Add(this.btnIstruzioni);
+            this.panel1.Controls.Add(this.lblPunteggioFinale);
             this.panel1.Controls.Add(this.btnPLAY);
+            this.panel1.Controls.Add(this.pctGameOver);
             this.panel1.Location = new System.Drawing.Point(438, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(493, 328);
@@ -266,9 +268,9 @@
             // 
             this.pctGameOver.BackColor = System.Drawing.Color.Transparent;
             this.pctGameOver.Image = global::FallingThing_s.Properties.Resources.game_OVER;
-            this.pctGameOver.Location = new System.Drawing.Point(-67, 41);
+            this.pctGameOver.Location = new System.Drawing.Point(-163, -2);
             this.pctGameOver.Name = "pctGameOver";
-            this.pctGameOver.Size = new System.Drawing.Size(564, 351);
+            this.pctGameOver.Size = new System.Drawing.Size(824, 351);
             this.pctGameOver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctGameOver.TabIndex = 14;
             this.pctGameOver.TabStop = false;
@@ -293,11 +295,11 @@
             // 
             this.lblPunteggioFinale.AutoSize = true;
             this.lblPunteggioFinale.BackColor = System.Drawing.Color.Transparent;
-            this.lblPunteggioFinale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPunteggioFinale.ForeColor = System.Drawing.Color.Brown;
-            this.lblPunteggioFinale.Location = new System.Drawing.Point(63, 428);
+            this.lblPunteggioFinale.Font = new System.Drawing.Font("Ink Free", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPunteggioFinale.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblPunteggioFinale.Location = new System.Drawing.Point(136, 277);
             this.lblPunteggioFinale.Name = "lblPunteggioFinale";
-            this.lblPunteggioFinale.Size = new System.Drawing.Size(0, 24);
+            this.lblPunteggioFinale.Size = new System.Drawing.Size(0, 26);
             this.lblPunteggioFinale.TabIndex = 3;
             this.lblPunteggioFinale.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lblPunteggioFinale.Visible = false;
@@ -335,10 +337,8 @@
             this.ClientSize = new System.Drawing.Size(1364, 705);
             this.Controls.Add(this.pctMuta);
             this.Controls.Add(this.ptcAudio);
-            this.Controls.Add(this.lblPunteggioFinale);
             this.Controls.Add(this.Pausa);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pctGameOver);
             this.Controls.Add(this.personaggio);
             this.Controls.Add(this.lblPunteggio);
             this.Controls.Add(this.lblTerreno);
@@ -368,6 +368,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaggio)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctGameOver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pausa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptcAudio)).EndInit();
