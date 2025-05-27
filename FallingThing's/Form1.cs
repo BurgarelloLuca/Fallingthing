@@ -22,6 +22,7 @@ namespace FallingThing_s
         bool giocoFinito = false;
         bool pausa = false;
         int cuori = 3;
+        SoundPlayer soundtrack = new SoundPlayer(Properties.Resources.Soundtrack);
 
 
         Image[] immagini = new Image[10]
@@ -141,6 +142,7 @@ namespace FallingThing_s
                     if (indice <= 3)
                     {
                         punteggio += 100;
+
                     }
                     else if (indice <= 6)
                     {
@@ -149,6 +151,7 @@ namespace FallingThing_s
                     else
                     {
                         punteggio += 500;
+
                     }
                     if (indice < 7 && indice > 3)
                     {
@@ -159,20 +162,33 @@ namespace FallingThing_s
 
                                 cuore3.Visible = false;
                                 cuori--;
+
                                 break;
                             case 2:
                                 cuore2.Visible = false;
                                 cuori--;
+
                                 break;
                             case 1:
                                 cuore1.Visible = false;
                                 cuori--;
+
                                 personaggio.Visible = false;
                                 giocoFinito = true;
+                                pctGameOver.Visible = true;
+                                lblPunteggioFinale.Visible = true;
                                 timerPersonaggio.Stop();
                                 timerCadutaOggetti.Stop();
-                                MessageBox.Show($" Hai perso! \n Hai accomulato {(punteggio + 200).ToString()} kcal");
-                                this.Close();
+                                punteggio = 0;
+                                soundtrack.Stop();
+                                Pausa.Visible = false;
+                                lblPunteggio.Visible = false;
+                                lblTesto.Visible = false;
+                                Oggetto1.Visible = false;
+                                Oggetto2.Visible = false;
+                                Oggetto3.Visible = false;
+                                
+
                                 return;
                         }
                     }
@@ -184,6 +200,8 @@ namespace FallingThing_s
                 }
             }
             lblPunteggio.Text = punteggio + "kcal";
+            lblPunteggioFinale.Text = "hai raggiunto " + punteggio + "kcal";
+
 
         }
 
@@ -193,6 +211,11 @@ namespace FallingThing_s
             this.DoubleBuffered = true;
             timerCadutaOggetti.Stop();
             timerPersonaggio.Stop();
+            personaggio.Visible = false;
+            cuore1.Visible = false;
+            cuore2.Visible = false;
+            cuore3.Visible = false;
+            soundtrack.PlayLooping();
         }
 
         private void btnPLAY_Click(object sender, EventArgs e)
@@ -202,6 +225,19 @@ namespace FallingThing_s
             timerPersonaggio.Start();
             timerCadutaOggetti.Start();
             Pausa.Visible = true;
+            personaggio.Visible = true;
+            cuore1.Visible = true;
+            cuore2.Visible = true;
+            cuore3.Visible = true;
+            soundtrack.PlayLooping();
+            pctGameOver.Visible = false;
+            lblPunteggioFinale.Visible = false;
+            Oggetto1.Visible = true;
+            Oggetto2.Visible = true;
+            Oggetto3.Visible = true;
+            lblPunteggio.Visible = true;
+            lblTesto.Visible = true;
+
         }
 
         private void btnIstruzioni_Click(object sender, EventArgs e)
@@ -221,6 +257,9 @@ namespace FallingThing_s
             timerPersonaggio.Stop();
             panel1.Visible = true;
             Pausa.Visible = false;
+            Oggetto1.Visible = false;
+            Oggetto2.Visible = false;
+            Oggetto3.Visible = false;
         }
     }
 }

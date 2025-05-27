@@ -44,10 +44,12 @@
             this.lblTerreno = new System.Windows.Forms.Label();
             this.personaggio = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pctGameOver = new System.Windows.Forms.PictureBox();
             this.btnEXIT = new System.Windows.Forms.Button();
             this.btnIstruzioni = new System.Windows.Forms.Button();
             this.btnPLAY = new System.Windows.Forms.Button();
             this.Pausa = new System.Windows.Forms.PictureBox();
+            this.lblPunteggioFinale = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuore3)).BeginInit();
@@ -57,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaggio)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctGameOver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pausa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,7 +95,7 @@
             this.Oggetto1.BackColor = System.Drawing.Color.Transparent;
             this.Oggetto1.Image = global::FallingThing_s.Properties.Resources.Flopper;
             this.Oggetto1.Location = new System.Drawing.Point(500, -81);
-            this.Oggetto1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Oggetto1.Margin = new System.Windows.Forms.Padding(2);
             this.Oggetto1.Name = "Oggetto1";
             this.Oggetto1.Size = new System.Drawing.Size(55, 59);
             this.Oggetto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -104,7 +107,7 @@
             this.Oggetto3.BackColor = System.Drawing.Color.Transparent;
             this.Oggetto3.Image = global::FallingThing_s.Properties.Resources.Rottame;
             this.Oggetto3.Location = new System.Drawing.Point(838, -2194);
-            this.Oggetto3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Oggetto3.Margin = new System.Windows.Forms.Padding(2);
             this.Oggetto3.Name = "Oggetto3";
             this.Oggetto3.Size = new System.Drawing.Size(58, 59);
             this.Oggetto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,7 +119,7 @@
             this.cuore3.BackColor = System.Drawing.Color.Transparent;
             this.cuore3.Image = global::FallingThing_s.Properties.Resources.Cuore;
             this.cuore3.Location = new System.Drawing.Point(90, 10);
-            this.cuore3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cuore3.Margin = new System.Windows.Forms.Padding(2);
             this.cuore3.Name = "cuore3";
             this.cuore3.Size = new System.Drawing.Size(40, 40);
             this.cuore3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,7 +131,7 @@
             this.cuore2.BackColor = System.Drawing.Color.Transparent;
             this.cuore2.Image = global::FallingThing_s.Properties.Resources.Cuore;
             this.cuore2.Location = new System.Drawing.Point(48, 10);
-            this.cuore2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cuore2.Margin = new System.Windows.Forms.Padding(2);
             this.cuore2.Name = "cuore2";
             this.cuore2.Size = new System.Drawing.Size(46, 40);
             this.cuore2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -140,7 +143,7 @@
             this.cuore1.BackColor = System.Drawing.Color.Transparent;
             this.cuore1.Image = global::FallingThing_s.Properties.Resources.Cuore;
             this.cuore1.Location = new System.Drawing.Point(9, 10);
-            this.cuore1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cuore1.Margin = new System.Windows.Forms.Padding(2);
             this.cuore1.Name = "cuore1";
             this.cuore1.Size = new System.Drawing.Size(44, 40);
             this.cuore1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -154,7 +157,7 @@
             this.tronco.Image = global::FallingThing_s.Properties.Resources.Tronco;
             this.tronco.InitialImage = null;
             this.tronco.Location = new System.Drawing.Point(1183, 428);
-            this.tronco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tronco.Margin = new System.Windows.Forms.Padding(2);
             this.tronco.Name = "tronco";
             this.tronco.Size = new System.Drawing.Size(225, 135);
             this.tronco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,7 +184,7 @@
             this.Oggetto2.BackColor = System.Drawing.Color.Transparent;
             this.Oggetto2.Image = ((System.Drawing.Image)(resources.GetObject("Oggetto2.Image")));
             this.Oggetto2.Location = new System.Drawing.Point(653, -1219);
-            this.Oggetto2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Oggetto2.Margin = new System.Windows.Forms.Padding(2);
             this.Oggetto2.Name = "Oggetto2";
             this.Oggetto2.Size = new System.Drawing.Size(46, 49);
             this.Oggetto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -205,7 +208,7 @@
             this.personaggio.BackColor = System.Drawing.Color.Transparent;
             this.personaggio.Image = ((System.Drawing.Image)(resources.GetObject("personaggio.Image")));
             this.personaggio.Location = new System.Drawing.Point(612, 428);
-            this.personaggio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.personaggio.Margin = new System.Windows.Forms.Padding(2);
             this.personaggio.Name = "personaggio";
             this.personaggio.Size = new System.Drawing.Size(134, 155);
             this.personaggio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -218,10 +221,22 @@
             this.panel1.Controls.Add(this.btnEXIT);
             this.panel1.Controls.Add(this.btnIstruzioni);
             this.panel1.Controls.Add(this.btnPLAY);
-            this.panel1.Location = new System.Drawing.Point(428, 75);
+            this.panel1.Location = new System.Drawing.Point(438, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(493, 328);
             this.panel1.TabIndex = 11;
+            // 
+            // pctGameOver
+            // 
+            this.pctGameOver.BackColor = System.Drawing.Color.Transparent;
+            this.pctGameOver.Image = global::FallingThing_s.Properties.Resources.game_OVER;
+            this.pctGameOver.Location = new System.Drawing.Point(17, 72);
+            this.pctGameOver.Name = "pctGameOver";
+            this.pctGameOver.Size = new System.Drawing.Size(415, 324);
+            this.pctGameOver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctGameOver.TabIndex = 14;
+            this.pctGameOver.TabStop = false;
+            this.pctGameOver.Visible = false;
             // 
             // btnEXIT
             // 
@@ -269,6 +284,19 @@
             this.Pausa.Visible = false;
             this.Pausa.Click += new System.EventHandler(this.Pausa_Click);
             // 
+            // lblPunteggioFinale
+            // 
+            this.lblPunteggioFinale.AutoSize = true;
+            this.lblPunteggioFinale.BackColor = System.Drawing.Color.Transparent;
+            this.lblPunteggioFinale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPunteggioFinale.ForeColor = System.Drawing.Color.Brown;
+            this.lblPunteggioFinale.Location = new System.Drawing.Point(63, 428);
+            this.lblPunteggioFinale.Name = "lblPunteggioFinale";
+            this.lblPunteggioFinale.Size = new System.Drawing.Size(0, 24);
+            this.lblPunteggioFinale.TabIndex = 3;
+            this.lblPunteggioFinale.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblPunteggioFinale.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,6 +304,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1364, 705);
+            this.Controls.Add(this.pctGameOver);
+            this.Controls.Add(this.lblPunteggioFinale);
             this.Controls.Add(this.Pausa);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.personaggio);
@@ -291,7 +321,7 @@
             this.Controls.Add(this.Oggetto2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "FallingThings";
@@ -307,6 +337,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaggio)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctGameOver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pausa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -333,6 +364,8 @@
         private System.Windows.Forms.Button btnIstruzioni;
         private System.Windows.Forms.Button btnPLAY;
         private System.Windows.Forms.PictureBox Pausa;
+        private System.Windows.Forms.Label lblPunteggioFinale;
+        private System.Windows.Forms.PictureBox pctGameOver;
     }
 }
 
