@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace FallingThing_s
 {
 
-    public partial class Form1 : Form
+    public partial class formGioco : Form
     {
 
         Random random = new Random();
@@ -43,7 +43,7 @@ namespace FallingThing_s
         PictureBox[] oggettiCadenti;
 
 
-        public Form1()
+        public formGioco()
         {
             InitializeComponent();
 
@@ -128,13 +128,13 @@ namespace FallingThing_s
                     velocita = 7;
                 }
                 oggettiCadenti[i].Top += velocita;
-                if (oggettiCadenti[i].Bounds.IntersectsWith(lblTerreno.Bounds))
+                if (oggettiCadenti[i].Top > this.ClientSize.Height)
                 {
                     nuovoIndice = random.Next(0, immagini.Length);
                     oggettiCadenti[i].Image = immagini[nuovoIndice];
                     oggettiCadenti[i].Tag = nuovoIndice;
                     oggettiCadenti[i].Top = 0;
-                    oggettiCadenti[i].Left = random.Next(0, this.ClientSize.Width - tronco.Width);
+                    oggettiCadenti[i].Left = random.Next(0,tronco.Left - oggettiCadenti[i].Width);
                 }
                 if ( oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
                 {
@@ -161,14 +161,9 @@ namespace FallingThing_s
                                 break;
                             case 1:
                                 cuore1.Visible = false;
-                                cuori--;
                                 personaggio.Visible = false;
-
-                                pctGameOver.Visible = true;
-                                lblPunteggioFinale.Visible = true;
                                 timerPersonaggio.Stop();
                                 timerCadutaOggetti.Stop();
-                                punteggio = 0;
                                 soundtrack.Stop();
                                 Pausa.Visible = false;
                                 lblPunteggio.Visible = false;
@@ -176,11 +171,10 @@ namespace FallingThing_s
                                 Oggetto1.Visible = false;
                                 Oggetto2.Visible = false;
                                 Oggetto3.Visible = false;
-                                btnIstruzioni.Visible = false;
-                                btnPLAY.Visible = false;
                                 panel1.Visible = true;
                                 pctMuta.Visible = false;
                                 ptcAudio.Visible = false;
+                                soundtrack.Stop();
                                 return;
                         }
                     }
@@ -189,36 +183,33 @@ namespace FallingThing_s
                     {
                         punteggio += 500;
 
-                    }  
+                    } 
 
                     nuovoIndice = random.Next(0, immagini.Length);
                     oggettiCadenti[i].Image = immagini[nuovoIndice];
                     oggettiCadenti[i].Tag = nuovoIndice;
                     oggettiCadenti[i].Top = 0;
+                    oggettiCadenti[i].Left = random.Next(0, tronco.Left - oggettiCadenti[i].Width);
                 }
             }
             lblPunteggio.Text = punteggio + "kcal";
-            lblPunteggioFinale.Text = "hai raggiunto " + punteggio + "kcal";
 
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+           
             pausa = true;
             this.DoubleBuffered = true;
             timerCadutaOggetti.Stop();
             timerPersonaggio.Stop();
-            personaggio.Visible = false;
-            cuore1.Visible = false;
-            cuore2.Visible = false;
-            cuore3.Visible = false;
             soundtrack.PlayLooping();
             ptcAudio.Visible = false;
         }
 
         private void btnPLAY_Click(object sender, EventArgs e)
-        {
+        { 
             pausa = false;
             panel1.Visible = false;
             timerPersonaggio.Start();
@@ -228,8 +219,6 @@ namespace FallingThing_s
             cuore1.Visible = true;
             cuore2.Visible = true;
             cuore3.Visible = true;
-            pctGameOver.Visible = false;
-            lblPunteggioFinale.Visible = false;
             Oggetto1.Visible = true;
             Oggetto2.Visible = true;
             Oggetto3.Visible = true;
@@ -260,13 +249,6 @@ namespace FallingThing_s
             Oggetto3.Visible = false;
         }
 
-        private void pctGameOver_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
         private void pctMuta_Click(object sender, EventArgs e)
         {
             soundtrack.Stop();
@@ -279,6 +261,11 @@ namespace FallingThing_s
             soundtrack.PlayLooping();
             ptcAudio.Visible = false;
             pctMuta.Visible = true;
+        }
+
+        private void formGioco_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            soundtrack.Stop();
         }
     }
 }
