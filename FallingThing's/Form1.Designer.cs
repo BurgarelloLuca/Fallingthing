@@ -82,7 +82,7 @@
             this.lblPunteggio.Font = new System.Drawing.Font("SimSun-ExtB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPunteggio.ForeColor = System.Drawing.Color.White;
             this.lblPunteggio.Image = ((System.Drawing.Image)(resources.GetObject("lblPunteggio.Image")));
-            this.lblPunteggio.Location = new System.Drawing.Point(998, 679);
+            this.lblPunteggio.Location = new System.Drawing.Point(988, 531);
             this.lblPunteggio.Name = "lblPunteggio";
             this.lblPunteggio.Size = new System.Drawing.Size(88, 24);
             this.lblPunteggio.TabIndex = 3;
@@ -157,7 +157,7 @@
             this.tronco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tronco.ImageLocation = "";
             this.tronco.InitialImage = null;
-            this.tronco.Location = new System.Drawing.Point(920, 600);
+            this.tronco.Location = new System.Drawing.Point(910, 452);
             this.tronco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tronco.Name = "tronco";
             this.tronco.Size = new System.Drawing.Size(224, 138);
@@ -172,7 +172,7 @@
             this.lblTesto.Font = new System.Drawing.Font("SimSun-ExtB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTesto.ForeColor = System.Drawing.Color.White;
             this.lblTesto.Image = ((System.Drawing.Image)(resources.GetObject("lblTesto.Image")));
-            this.lblTesto.Location = new System.Drawing.Point(988, 628);
+            this.lblTesto.Location = new System.Drawing.Point(978, 480);
             this.lblTesto.Name = "lblTesto";
             this.lblTesto.Size = new System.Drawing.Size(122, 63);
             this.lblTesto.TabIndex = 1;
@@ -197,7 +197,7 @@
             this.personaggio.BackColor = System.Drawing.Color.Transparent;
             this.personaggio.BackgroundImage = global::FallingThing_s.Properties.Resources.personaggio;
             this.personaggio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.personaggio.Location = new System.Drawing.Point(490, 557);
+            this.personaggio.Location = new System.Drawing.Point(483, 423);
             this.personaggio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.personaggio.Name = "personaggio";
             this.personaggio.Size = new System.Drawing.Size(150, 191);
@@ -287,7 +287,7 @@
             this.panel1.Controls.Add(this.btnEXIT);
             this.panel1.Controls.Add(this.btnIstruzioni);
             this.panel1.Controls.Add(this.btnPLAY);
-            this.panel1.Location = new System.Drawing.Point(212, 162);
+            this.panel1.Location = new System.Drawing.Point(215, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(657, 404);
@@ -297,7 +297,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::FallingThing_s.Properties.Resources.sfondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1098, 724);
             this.Controls.Add(this.personaggio);

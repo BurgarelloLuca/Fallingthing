@@ -271,19 +271,9 @@ namespace FallingThing_s.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SfondoGioco {
+        internal static System.Drawing.Bitmap sfondo {
             get {
-                object obj = ResourceManager.GetObject("SfondoGioco", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap SfondoInizio {
-            get {
-                object obj = ResourceManager.GetObject("SfondoInizio", resourceCulture);
+                object obj = ResourceManager.GetObject("sfondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

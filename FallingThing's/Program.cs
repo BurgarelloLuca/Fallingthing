@@ -16,7 +16,7 @@ namespace FallingThing_s
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formIniziale());
+            Application.Run(new formGioco());
         }
     }
 }
