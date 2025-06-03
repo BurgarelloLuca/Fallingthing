@@ -128,7 +128,7 @@ namespace FallingThing_s
                     velocita = 7;
                 }
                 oggettiCadenti[i].Top += velocita;
-                if (oggettiCadenti[i].Top > this.ClientSize.Height)
+                if (oggettiCadenti[i].Bounds.IntersectsWith(lblTerreno.Bounds))
                 {
                     nuovoIndice = random.Next(0, immagini.Length);
                     oggettiCadenti[i].Image = immagini[nuovoIndice];
@@ -199,7 +199,6 @@ namespace FallingThing_s
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
             pausa = true;
             this.DoubleBuffered = true;
             timerCadutaOggetti.Stop();

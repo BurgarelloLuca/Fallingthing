@@ -49,6 +49,7 @@
             this.btnIstruzioni = new System.Windows.Forms.Button();
             this.btnEXIT = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTerreno = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cuore3)).BeginInit();
@@ -293,6 +294,14 @@
             this.panel1.Size = new System.Drawing.Size(657, 404);
             this.panel1.TabIndex = 11;
             // 
+            // lblTerreno
+            // 
+            this.lblTerreno.BackColor = System.Drawing.Color.Transparent;
+            this.lblTerreno.Location = new System.Drawing.Point(12, 553);
+            this.lblTerreno.Name = "lblTerreno";
+            this.lblTerreno.Size = new System.Drawing.Size(1088, 190);
+            this.lblTerreno.TabIndex = 17;
+            // 
             // formGioco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -301,6 +310,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1098, 724);
             this.Controls.Add(this.personaggio);
+            this.Controls.Add(this.lblTerreno);
             this.Controls.Add(this.pctMuta);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ptcAudio);
@@ -364,6 +374,7 @@
         private System.Windows.Forms.Button btnIstruzioni;
         private System.Windows.Forms.Button btnEXIT;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblTerreno;
     }
 }
 
