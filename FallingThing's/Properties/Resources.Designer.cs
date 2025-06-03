@@ -221,6 +221,16 @@ namespace FallingThing_s.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pctGameOver {
+            get {
+                object obj = ResourceManager.GetObject("pctGameOver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Peperoncino {
             get {
                 object obj = ResourceManager.GetObject("Peperoncino", resourceCulture);

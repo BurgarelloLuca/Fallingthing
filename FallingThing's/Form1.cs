@@ -134,9 +134,9 @@ namespace FallingThing_s
                     oggettiCadenti[i].Image = immagini[nuovoIndice];
                     oggettiCadenti[i].Tag = nuovoIndice;
                     oggettiCadenti[i].Top = 0;
-                    oggettiCadenti[i].Left = random.Next(0,tronco.Left - oggettiCadenti[i].Width);
+                    oggettiCadenti[i].Left = random.Next(0, this.ClientSize.Width - tronco.Width);
                 }
-                if ( oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
+                if (oggettiCadenti[i].Bounds.IntersectsWith(personaggio.Bounds))
                 {
                     if (indice <= 3)
                     {
@@ -161,9 +161,14 @@ namespace FallingThing_s
                                 break;
                             case 1:
                                 cuore1.Visible = false;
+                                cuori--;
                                 personaggio.Visible = false;
+
+                                pctGameOver.Visible = true;
+                                lblPunteggioFinale.Visible = true;
                                 timerPersonaggio.Stop();
                                 timerCadutaOggetti.Stop();
+                                punteggio = 0;
                                 soundtrack.Stop();
                                 Pausa.Visible = false;
                                 lblPunteggio.Visible = false;
@@ -171,28 +176,29 @@ namespace FallingThing_s
                                 Oggetto1.Visible = false;
                                 Oggetto2.Visible = false;
                                 Oggetto3.Visible = false;
+                                btnIstruzioni.Visible = false;
+                                btnPLAY.Visible = false;
                                 panel1.Visible = true;
                                 pctMuta.Visible = false;
                                 ptcAudio.Visible = false;
-                                soundtrack.Stop();
                                 return;
                         }
                     }
-                
+
                     else
                     {
                         punteggio += 500;
 
-                    } 
+                    }
 
                     nuovoIndice = random.Next(0, immagini.Length);
                     oggettiCadenti[i].Image = immagini[nuovoIndice];
                     oggettiCadenti[i].Tag = nuovoIndice;
                     oggettiCadenti[i].Top = 0;
-                    oggettiCadenti[i].Left = random.Next(0, tronco.Left - oggettiCadenti[i].Width);
                 }
             }
             lblPunteggio.Text = punteggio + "kcal";
+            lblPunteggioFinale.Text = "hai raggiunto " + punteggio + "kcal";
 
 
         }
@@ -203,12 +209,16 @@ namespace FallingThing_s
             this.DoubleBuffered = true;
             timerCadutaOggetti.Stop();
             timerPersonaggio.Stop();
+            personaggio.Visible = false;
+            cuore1.Visible = false;
+            cuore2.Visible = false;
+            cuore3.Visible = false;
             soundtrack.PlayLooping();
             ptcAudio.Visible = false;
         }
 
         private void btnPLAY_Click(object sender, EventArgs e)
-        { 
+        {
             pausa = false;
             panel1.Visible = false;
             timerPersonaggio.Start();
@@ -218,6 +228,8 @@ namespace FallingThing_s
             cuore1.Visible = true;
             cuore2.Visible = true;
             cuore3.Visible = true;
+            pctGameOver.Visible = false;
+            lblPunteggioFinale.Visible = false;
             Oggetto1.Visible = true;
             Oggetto2.Visible = true;
             Oggetto3.Visible = true;
@@ -261,11 +273,5 @@ namespace FallingThing_s
             ptcAudio.Visible = false;
             pctMuta.Visible = true;
         }
-
-        private void formGioco_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            soundtrack.Stop();
-        }
     }
 }
-

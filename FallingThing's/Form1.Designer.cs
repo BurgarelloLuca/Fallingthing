@@ -49,6 +49,8 @@
             this.btnIstruzioni = new System.Windows.Forms.Button();
             this.btnEXIT = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblPunteggioFinale = new System.Windows.Forms.Label();
+            this.pctGameOver = new System.Windows.Forms.PictureBox();
             this.lblTerreno = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Oggetto3)).BeginInit();
@@ -62,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptcAudio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctMuta)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctGameOver)).BeginInit();
             this.SuspendLayout();
             // 
             // timerPersonaggio
@@ -263,7 +266,7 @@
             // btnIstruzioni
             // 
             this.btnIstruzioni.Image = global::FallingThing_s.Properties.Resources.Options;
-            this.btnIstruzioni.Location = new System.Drawing.Point(201, 169);
+            this.btnIstruzioni.Location = new System.Drawing.Point(201, 168);
             this.btnIstruzioni.Margin = new System.Windows.Forms.Padding(4);
             this.btnIstruzioni.Name = "btnIstruzioni";
             this.btnIstruzioni.Size = new System.Drawing.Size(260, 64);
@@ -285,14 +288,38 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.lblPunteggioFinale);
             this.panel1.Controls.Add(this.btnEXIT);
             this.panel1.Controls.Add(this.btnIstruzioni);
             this.panel1.Controls.Add(this.btnPLAY);
+            this.panel1.Controls.Add(this.pctGameOver);
             this.panel1.Location = new System.Drawing.Point(215, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(657, 404);
             this.panel1.TabIndex = 11;
+            // 
+            // lblPunteggioFinale
+            // 
+            this.lblPunteggioFinale.AutoSize = true;
+            this.lblPunteggioFinale.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPunteggioFinale.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblPunteggioFinale.Location = new System.Drawing.Point(157, 351);
+            this.lblPunteggioFinale.Name = "lblPunteggioFinale";
+            this.lblPunteggioFinale.Size = new System.Drawing.Size(0, 34);
+            this.lblPunteggioFinale.TabIndex = 18;
+            // 
+            // pctGameOver
+            // 
+            this.pctGameOver.BackColor = System.Drawing.Color.Transparent;
+            this.pctGameOver.BackgroundImage = global::FallingThing_s.Properties.Resources.pctGameOver;
+            this.pctGameOver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pctGameOver.Location = new System.Drawing.Point(-60, -1);
+            this.pctGameOver.Name = "pctGameOver";
+            this.pctGameOver.Size = new System.Drawing.Size(763, 431);
+            this.pctGameOver.TabIndex = 18;
+            this.pctGameOver.TabStop = false;
+            this.pctGameOver.Visible = false;
             // 
             // lblTerreno
             // 
@@ -332,7 +359,6 @@
             this.MaximizeBox = false;
             this.Name = "formGioco";
             this.Text = "FallingThings";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formGioco_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
@@ -348,6 +374,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptcAudio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctMuta)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctGameOver)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,6 +403,8 @@
         private System.Windows.Forms.Button btnEXIT;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTerreno;
+        private System.Windows.Forms.PictureBox pctGameOver;
+        private System.Windows.Forms.Label lblPunteggioFinale;
     }
 }
 
